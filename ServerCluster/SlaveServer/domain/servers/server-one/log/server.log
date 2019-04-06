@@ -1,0 +1,1196 @@
+2019-04-05 00:47:26,288 INFO  [org.jboss.modules] (main) JBoss Modules version 1.6.1.Final
+2019-04-05 00:47:26,654 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.7.SP1
+2019-04-05 00:47:26,796 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0049: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) starting
+2019-04-05 00:47:26,797 DEBUG [org.jboss.as.config] (MSC service thread 1-8) Configured system properties:
+	[Server:server-one] = 
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Java\jre1.8.0_201\lib\endorsed
+	java.ext.dirs = C:\Java\jre1.8.0_201\lib\ext;C:\Windows\Sun\Java\lib\ext
+	java.home = C:\Java\jre1.8.0_201
+	java.io.tmpdir = C:\Users\Meske\AppData\Local\Temp\
+	java.library.path = C:\Java\jre1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\Meske\AppData\Local\Microsoft\WindowsApps;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_201-b09
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_201
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.201-b09
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.domain.base.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain
+	jboss.domain.config.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\configuration
+	jboss.home.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer
+	jboss.host.name = desktop-ailu0cm
+	jboss.modules.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = slave:server-one
+	jboss.qualified.host.name = desktop-ailu0cm
+	jboss.server.base.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one
+	jboss.server.config.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\configuration
+	jboss.server.data.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data
+	jboss.server.deploy.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\content
+	jboss.server.log.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\log
+	jboss.server.name = server-one
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\tmp
+	line.separator = 
+
+	logging.configuration = file:/E:/FAKS/Materijali%20-%20AT/2019/Project%20Workspace/ServerCluster/SlaveServer/domain/configuration/default-server-logging.properties
+	module.path = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\modules
+	org.jboss.boot.log.file = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\log\server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Java\jre1.8.0_201\lib\resources.jar;C:\Java\jre1.8.0_201\lib\rt.jar;C:\Java\jre1.8.0_201\lib\sunrsasign.jar;C:\Java\jre1.8.0_201\lib\jsse.jar;C:\Java\jre1.8.0_201\lib\jce.jar;C:\Java\jre1.8.0_201\lib\charsets.jar;C:\Java\jre1.8.0_201\lib\jfr.jar;C:\Java\jre1.8.0_201\classes
+	sun.boot.library.path = C:\Java\jre1.8.0_201\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\jboss-modules.jar -mp E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\modules org.jboss.as.server
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = US
+	user.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer
+	user.home = C:\Users\Meske
+	user.language = en
+	user.name = Meske
+	user.script = 
+	user.timezone = Europe/Prague
+	user.variant = 
+2019-04-05 00:47:26,798 DEBUG [org.jboss.as.config] (MSC service thread 1-8) VM Arguments: -D[Server:server-one] -Xms64m -Xmx512m -XX:MetaspaceSize=96m -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.home.dir=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer -Djboss.modules.system.pkgs=org.jboss.byteman -Djboss.server.log.dir=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\log -Djboss.server.temp.dir=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\tmp -Djboss.server.data.dir=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data -Dorg.jboss.boot.log.file=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\log\server.log -Dlogging.configuration=file:/E:/FAKS/Materijali%20-%20AT/2019/Project%20Workspace/ServerCluster/SlaveServer/domain/configuration/default-server-logging.properties 
+2019-04-05 00:47:26,870 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.5.4.Final
+2019-04-05 00:47:26,877 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.5.4.Final
+2019-04-05 00:47:27,048 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 5.0.5.Final
+2019-04-05 00:47:27,560 INFO  [org.wildfly.security] (ServerService Thread Pool -- 2) ELY00001: WildFly Elytron version 1.1.6.Final
+2019-04-05 00:47:29,541 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 27) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-04-05 00:47:29,678 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 38) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-04-05 00:47:29,818 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 43) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-04-05 00:47:29,822 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 45) WFLYRS0016: RESTEasy version 3.0.24.Final
+2019-04-05 00:47:29,824 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 62) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-04-05 00:47:29,830 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 54) WFLYNAM0001: Activating Naming Subsystem
+2019-04-05 00:47:29,831 INFO  [org.wildfly.iiop.openjdk] (ServerService Thread Pool -- 44) WFLYIIOP0001: Activating IIOP Subsystem
+2019-04-05 00:47:29,838 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 60) WFLYSEC0002: Activating Security Subsystem
+2019-04-05 00:47:29,844 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 50) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-04-05 00:47:29,850 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 64) WFLYWS0002: Activating WebServices Extension
+2019-04-05 00:47:29,861 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.6.Final)
+2019-04-05 00:47:29,862 INFO  [org.jboss.as.security] (MSC service thread 1-2) WFLYSEC0001: Current PicketBox version=5.0.2.Final
+2019-04-05 00:47:29,872 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-04-05 00:47:29,896 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 42) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2019-04-05 00:47:29,904 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 63) WFLYUT0014: Creating file handler for path 'E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-04-05 00:47:29,916 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0003: Undertow 1.4.18.Final starting
+2019-04-05 00:47:29,959 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2019-04-05 00:47:29,959 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2019-04-05 00:47:29,985 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+2019-04-05 00:47:30,000 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-04-05 00:47:30,399 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0012: Started server default-server.
+2019-04-05 00:47:30,400 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0018: Host default-host starting
+2019-04-05 00:47:30,629 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.1.1.2:8080
+2019-04-05 00:47:30,705 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0493: EJB subsystem suspension complete
+2019-04-05 00:47:30,790 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-04-05 00:47:30,902 INFO  [org.wildfly.iiop.openjdk] (MSC service thread 1-2) WFLYIIOP0009: CORBA ORB Service started
+2019-04-05 00:47:30,932 SEVERE [javax.enterprise.resource.corba._DEFAULT_.rpc.transport] (MSC service thread 1-6) "IOP00410216: (COMM_FAILURE) Unable to create listener thread on the specified port: 3528": org.omg.CORBA.COMM_FAILURE:   vmcid: SUN  minor code: 216  completed: No
+	at com.sun.corba.se.impl.logging.ORBUtilSystemException.createListenerFailed(ORBUtilSystemException.java:2632)
+	at com.sun.corba.se.impl.logging.ORBUtilSystemException.createListenerFailed(ORBUtilSystemException.java:2651)
+	at com.sun.corba.se.impl.transport.SocketOrChannelAcceptorImpl.initialize(SocketOrChannelAcceptorImpl.java:164)
+	at com.sun.corba.se.impl.transport.CorbaTransportManagerImpl.getAcceptors(CorbaTransportManagerImpl.java:218)
+	at com.sun.corba.se.impl.transport.CorbaTransportManagerImpl.addToIORTemplate(CorbaTransportManagerImpl.java:236)
+	at com.sun.corba.se.spi.oa.ObjectAdapterBase.initializeTemplate(ObjectAdapterBase.java:122)
+	at com.sun.corba.se.impl.oa.poa.POAImpl.initialize(POAImpl.java:404)
+	at com.sun.corba.se.impl.oa.poa.POAImpl.makeRootPOA(POAImpl.java:272)
+	at com.sun.corba.se.impl.oa.poa.POAFactory$1.evaluate(POAFactory.java:205)
+	at com.sun.corba.se.impl.orbutil.closure.Future.evaluate(Future.java:46)
+	at com.sun.corba.se.impl.resolver.LocalResolverImpl.resolve(LocalResolverImpl.java:40)
+	at com.sun.corba.se.impl.resolver.CompositeResolverImpl.resolve(CompositeResolverImpl.java:45)
+	at com.sun.corba.se.impl.orb.ORBImpl.resolve_initial_references(ORBImpl.java:1169)
+	at org.wildfly.iiop.openjdk.service.CorbaPOAService.start(CorbaPOAService.java:156)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.wildfly.iiop.openjdk.security.SocketFactoryBase.createServerSocket(SocketFactoryBase.java:59)
+	at org.wildfly.iiop.openjdk.security.NoSSLSocketFactory.createServerSocket(NoSSLSocketFactory.java:50)
+	at com.sun.corba.se.impl.transport.SocketOrChannelAcceptorImpl.initialize(SocketOrChannelAcceptorImpl.java:161)
+	... 16 more
+
+2019-04-05 00:47:30,935 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-6) MSC000001: Failed to start service jboss.iiop-openjdk.poa-service.rootpoa: org.jboss.msc.service.StartException in service jboss.iiop-openjdk.poa-service.rootpoa: WFLYIIOP0098: Failed to resolve initial reference RootPOA
+	at org.wildfly.iiop.openjdk.service.CorbaPOAService.start(CorbaPOAService.java:158)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.omg.CORBA.COMM_FAILURE:   vmcid: SUN  minor code: 216  completed: No
+	at com.sun.corba.se.impl.logging.ORBUtilSystemException.createListenerFailed(ORBUtilSystemException.java:2632)
+	at com.sun.corba.se.impl.logging.ORBUtilSystemException.createListenerFailed(ORBUtilSystemException.java:2651)
+	at com.sun.corba.se.impl.transport.SocketOrChannelAcceptorImpl.initialize(SocketOrChannelAcceptorImpl.java:164)
+	at com.sun.corba.se.impl.transport.CorbaTransportManagerImpl.getAcceptors(CorbaTransportManagerImpl.java:218)
+	at com.sun.corba.se.impl.transport.CorbaTransportManagerImpl.addToIORTemplate(CorbaTransportManagerImpl.java:236)
+	at com.sun.corba.se.spi.oa.ObjectAdapterBase.initializeTemplate(ObjectAdapterBase.java:122)
+	at com.sun.corba.se.impl.oa.poa.POAImpl.initialize(POAImpl.java:404)
+	at com.sun.corba.se.impl.oa.poa.POAImpl.makeRootPOA(POAImpl.java:272)
+	at com.sun.corba.se.impl.oa.poa.POAFactory$1.evaluate(POAFactory.java:205)
+	at com.sun.corba.se.impl.orbutil.closure.Future.evaluate(Future.java:46)
+	at com.sun.corba.se.impl.resolver.LocalResolverImpl.resolve(LocalResolverImpl.java:40)
+	at com.sun.corba.se.impl.resolver.CompositeResolverImpl.resolve(CompositeResolverImpl.java:45)
+	at com.sun.corba.se.impl.orb.ORBImpl.resolve_initial_references(ORBImpl.java:1169)
+	at org.wildfly.iiop.openjdk.service.CorbaPOAService.start(CorbaPOAService.java:156)
+	... 5 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.wildfly.iiop.openjdk.security.SocketFactoryBase.createServerSocket(SocketFactoryBase.java:59)
+	at org.wildfly.iiop.openjdk.security.NoSSLSocketFactory.createServerSocket(NoSSLSocketFactory.java:50)
+	at com.sun.corba.se.impl.transport.SocketOrChannelAcceptorImpl.initialize(SocketOrChannelAcceptorImpl.java:161)
+	... 16 more
+
+2019-04-05 00:47:31,048 INFO  [org.jboss.as.patching] (MSC service thread 1-7) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-04-05 00:47:31,050 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-5) WFLYMSGAMQ0001: AIO wasn't located on this platform, it will fall back to using pure Java NIO.
+2019-04-05 00:47:31,054 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-04-05 00:47:31,099 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTPS listener https listening on 127.1.1.2:8443
+2019-04-05 00:47:31,256 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 5.1.9.Final (Apache CXF 3.1.12) 
+2019-04-05 00:47:31,938 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\activemq\journal,bindingsDirectory=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\activemq\bindings,largeMessagesDirectory=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\activemq\largemessages,pagingDirectory=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\activemq\paging)
+2019-04-05 00:47:31,964 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221013: Using NIO Journal
+2019-04-05 00:47:32,025 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-04-05 00:47:32,032 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+2019-04-05 00:47:32,033 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+2019-04-05 00:47:32,034 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+2019-04-05 00:47:32,358 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-1) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2019-04-05 00:47:32,359 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-7) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2019-04-05 00:47:32,360 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-2) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2019-04-05 00:47:32,361 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-8) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2019-04-05 00:47:32,557 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221007: Server is now live
+2019-04-05 00:47:32,557 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221001: Apache ActiveMQ Artemis Message Broker version 1.5.5.jbossorg-008 [default, nodeID=3c246acb-5715-11e9-82a1-025067aa0bed] 
+2019-04-05 00:47:32,831 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 66) WFLYMSGAMQ0002: Bound messaging object to jndi name java:/ConnectionFactory
+2019-04-05 00:47:32,900 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-2) WFLYJCA0007: Registered connection factory java:/JmsXA
+2019-04-05 00:47:32,905 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 69) AMQ221003: Deploying queue jms.queue.DLQ
+2019-04-05 00:47:33,138 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 67) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2019-04-05 00:47:33,139 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 68) AMQ221003: Deploying queue jms.queue.ExpiryQueue
+2019-04-05 00:47:33,139 INFO  [org.apache.activemq.artemis.ra] (MSC service thread 1-2) Resource adaptor started
+2019-04-05 00:47:33,140 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-2) IJ020002: Deployed: file://RaActivatoractivemq-ra
+2019-04-05 00:47:33,141 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-5) WFLYJCA0002: Bound JCA ConnectionFactory [java:/JmsXA]
+2019-04-05 00:47:33,141 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-4) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2019-04-05 00:47:33,181 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("add") failed - address: ([("subsystem" => "iiop-openjdk")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.iiop-openjdk.poa-service.rootpoa" => "WFLYIIOP0098: Failed to resolve initial reference RootPOA
+    Caused by: org.omg.CORBA.COMM_FAILURE:   vmcid: SUN  minor code: 216  completed: No
+    Caused by: java.net.BindException: Address already in use: bind"}}
+2019-04-05 00:47:33,236 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.iiop-openjdk.poa-service.rootpoa: WFLYIIOP0098: Failed to resolve initial reference RootPOA
+
+2019-04-05 00:47:33,274 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-04-05 00:47:33,277 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) started (with errors) in 7500ms - Started 306 of 577 services (4 services failed or missing dependencies, 361 services are lazy, passive or on-demand)
+2019-04-05 00:51:05,674 INFO  [org.jboss.as.server] (main) WFLYSRV0240: ProcessController has signalled to shut down; shutting down
+2019-04-05 00:51:05,711 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-04-05 00:51:05,712 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-1) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2019-04-05 00:51:05,742 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-2) WFLYJCA0011: Unbound JCA ConnectionFactory [java:/JmsXA]
+2019-04-05 00:51:05,744 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 7) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:/ConnectionFactory
+2019-04-05 00:51:05,747 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+2019-04-05 00:51:05,750 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTPS listener https suspending
+2019-04-05 00:51:05,752 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.1.1.2:8443
+2019-04-05 00:51:05,765 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2019-04-05 00:51:05,950 INFO  [org.apache.activemq.artemis.ra] (ServerService Thread Pool -- 15) AMQ151003: resource adaptor stopped
+2019-04-05 00:51:06,059 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 15) AMQ221002: Apache ActiveMQ Artemis Message Broker version 1.5.5.jbossorg-008 [3c246acb-5715-11e9-82a1-025067aa0bed] stopped, uptime 3 minutes
+2019-04-05 00:51:06,060 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2019-04-05 00:51:06,061 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.1.1.2:8080
+2019-04-05 00:51:06,061 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 1.4.18.Final stopping
+2019-04-05 00:51:06,070 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) stopped in 383ms
+2019-04-05 01:19:14,332 INFO  [org.jboss.modules] (main) JBoss Modules version 1.6.1.Final
+2019-04-05 01:19:14,679 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.7.SP1
+2019-04-05 01:19:14,813 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0049: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) starting
+2019-04-05 01:19:14,814 DEBUG [org.jboss.as.config] (MSC service thread 1-8) Configured system properties:
+	[Server:server-one] = 
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Java\jre1.8.0_201\lib\endorsed
+	java.ext.dirs = C:\Java\jre1.8.0_201\lib\ext;C:\Windows\Sun\Java\lib\ext
+	java.home = C:\Java\jre1.8.0_201
+	java.io.tmpdir = C:\Users\Meske\AppData\Local\Temp\
+	java.library.path = C:\Java\jre1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\Meske\AppData\Local\Microsoft\WindowsApps;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_201-b09
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_201
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.201-b09
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.domain.base.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain
+	jboss.domain.config.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\configuration
+	jboss.home.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer
+	jboss.host.name = desktop-ailu0cm
+	jboss.modules.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = slave:server-one
+	jboss.qualified.host.name = desktop-ailu0cm
+	jboss.server.base.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one
+	jboss.server.config.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\configuration
+	jboss.server.data.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data
+	jboss.server.deploy.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\content
+	jboss.server.log.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\log
+	jboss.server.name = server-one
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\tmp
+	line.separator = 
+
+	logging.configuration = file:/E:/FAKS/Materijali%20-%20AT/2019/Project%20Workspace/ServerCluster/SlaveServer/domain/servers/server-one/data/logging.properties
+	module.path = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\modules
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Java\jre1.8.0_201\lib\resources.jar;C:\Java\jre1.8.0_201\lib\rt.jar;C:\Java\jre1.8.0_201\lib\sunrsasign.jar;C:\Java\jre1.8.0_201\lib\jsse.jar;C:\Java\jre1.8.0_201\lib\jce.jar;C:\Java\jre1.8.0_201\lib\charsets.jar;C:\Java\jre1.8.0_201\lib\jfr.jar;C:\Java\jre1.8.0_201\classes
+	sun.boot.library.path = C:\Java\jre1.8.0_201\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\jboss-modules.jar -mp E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\modules org.jboss.as.server
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = US
+	user.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer
+	user.home = C:\Users\Meske
+	user.language = en
+	user.name = Meske
+	user.script = 
+	user.timezone = Europe/Prague
+	user.variant = 
+2019-04-05 01:19:14,815 DEBUG [org.jboss.as.config] (MSC service thread 1-8) VM Arguments: -D[Server:server-one] -Xms64m -Xmx512m -XX:MetaspaceSize=96m -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.home.dir=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer -Djboss.modules.system.pkgs=org.jboss.byteman -Djboss.server.log.dir=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\log -Djboss.server.temp.dir=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\tmp -Djboss.server.data.dir=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data -Dlogging.configuration=file:/E:/FAKS/Materijali%20-%20AT/2019/Project%20Workspace/ServerCluster/SlaveServer/domain/servers/server-one/data/logging.properties 
+2019-04-05 01:19:14,888 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.5.4.Final
+2019-04-05 01:19:14,895 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.5.4.Final
+2019-04-05 01:19:15,060 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.5.Final
+2019-04-05 01:19:15,559 INFO  [org.wildfly.security] (ServerService Thread Pool -- 2) ELY00001: WildFly Elytron version 1.1.6.Final
+2019-04-05 01:19:17,592 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 30) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-04-05 01:19:17,758 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 38) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-04-05 01:19:17,905 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 62) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-04-05 01:19:17,910 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 54) WFLYNAM0001: Activating Naming Subsystem
+2019-04-05 01:19:17,917 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 64) WFLYWS0002: Activating WebServices Extension
+2019-04-05 01:19:17,922 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 45) WFLYRS0016: RESTEasy version 3.0.24.Final
+2019-04-05 01:19:17,924 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 60) WFLYSEC0002: Activating Security Subsystem
+2019-04-05 01:19:17,942 INFO  [org.wildfly.iiop.openjdk] (ServerService Thread Pool -- 44) WFLYIIOP0001: Activating IIOP Subsystem
+2019-04-05 01:19:17,949 INFO  [org.jboss.as.security] (MSC service thread 1-8) WFLYSEC0001: Current PicketBox version=5.0.2.Final
+2019-04-05 01:19:17,969 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 43) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-04-05 01:19:17,996 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 63) WFLYUT0014: Creating file handler for path 'E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-04-05 01:19:17,997 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 50) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-04-05 01:19:17,996 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 1.4.18.Final starting
+2019-04-05 01:19:18,006 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 42) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2019-04-05 01:19:18,104 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.6.Final)
+2019-04-05 01:19:18,142 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+2019-04-05 01:19:18,144 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-04-05 01:19:18,154 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-04-05 01:19:18,200 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2019-04-05 01:19:18,201 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2019-04-05 01:19:18,434 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: Started server default-server.
+2019-04-05 01:19:18,435 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2019-04-05 01:19:18,631 INFO  [org.jboss.as.patching] (MSC service thread 1-1) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-04-05 01:19:18,654 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-04-05 01:19:18,729 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.1.1.2:8443
+2019-04-05 01:19:18,730 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on 127.1.1.2:8080
+2019-04-05 01:19:18,773 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-1) WFLYMSGAMQ0001: AIO wasn't located on this platform, it will fall back to using pure Java NIO.
+2019-04-05 01:19:18,815 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0493: EJB subsystem suspension complete
+2019-04-05 01:19:18,896 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBossWS 5.1.9.Final (Apache CXF 3.1.12) 
+2019-04-05 01:19:18,931 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-04-05 01:19:19,121 INFO  [org.wildfly.iiop.openjdk] (MSC service thread 1-6) WFLYIIOP0009: CORBA ORB Service started
+2019-04-05 01:19:19,137 SEVERE [javax.enterprise.resource.corba._DEFAULT_.rpc.transport] (MSC service thread 1-6) "IOP00410216: (COMM_FAILURE) Unable to create listener thread on the specified port: 3528": org.omg.CORBA.COMM_FAILURE:   vmcid: SUN  minor code: 216  completed: No
+	at com.sun.corba.se.impl.logging.ORBUtilSystemException.createListenerFailed(ORBUtilSystemException.java:2632)
+	at com.sun.corba.se.impl.logging.ORBUtilSystemException.createListenerFailed(ORBUtilSystemException.java:2651)
+	at com.sun.corba.se.impl.transport.SocketOrChannelAcceptorImpl.initialize(SocketOrChannelAcceptorImpl.java:164)
+	at com.sun.corba.se.impl.transport.CorbaTransportManagerImpl.getAcceptors(CorbaTransportManagerImpl.java:218)
+	at com.sun.corba.se.impl.transport.CorbaTransportManagerImpl.addToIORTemplate(CorbaTransportManagerImpl.java:236)
+	at com.sun.corba.se.spi.oa.ObjectAdapterBase.initializeTemplate(ObjectAdapterBase.java:122)
+	at com.sun.corba.se.impl.oa.poa.POAImpl.initialize(POAImpl.java:404)
+	at com.sun.corba.se.impl.oa.poa.POAImpl.makeRootPOA(POAImpl.java:272)
+	at com.sun.corba.se.impl.oa.poa.POAFactory$1.evaluate(POAFactory.java:205)
+	at com.sun.corba.se.impl.orbutil.closure.Future.evaluate(Future.java:46)
+	at com.sun.corba.se.impl.resolver.LocalResolverImpl.resolve(LocalResolverImpl.java:40)
+	at com.sun.corba.se.impl.resolver.CompositeResolverImpl.resolve(CompositeResolverImpl.java:45)
+	at com.sun.corba.se.impl.orb.ORBImpl.resolve_initial_references(ORBImpl.java:1169)
+	at org.wildfly.iiop.openjdk.service.CorbaPOAService.start(CorbaPOAService.java:156)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.wildfly.iiop.openjdk.security.SocketFactoryBase.createServerSocket(SocketFactoryBase.java:59)
+	at org.wildfly.iiop.openjdk.security.NoSSLSocketFactory.createServerSocket(NoSSLSocketFactory.java:50)
+	at com.sun.corba.se.impl.transport.SocketOrChannelAcceptorImpl.initialize(SocketOrChannelAcceptorImpl.java:161)
+	... 16 more
+
+2019-04-05 01:19:19,140 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-6) MSC000001: Failed to start service jboss.iiop-openjdk.poa-service.rootpoa: org.jboss.msc.service.StartException in service jboss.iiop-openjdk.poa-service.rootpoa: WFLYIIOP0098: Failed to resolve initial reference RootPOA
+	at org.wildfly.iiop.openjdk.service.CorbaPOAService.start(CorbaPOAService.java:158)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.omg.CORBA.COMM_FAILURE:   vmcid: SUN  minor code: 216  completed: No
+	at com.sun.corba.se.impl.logging.ORBUtilSystemException.createListenerFailed(ORBUtilSystemException.java:2632)
+	at com.sun.corba.se.impl.logging.ORBUtilSystemException.createListenerFailed(ORBUtilSystemException.java:2651)
+	at com.sun.corba.se.impl.transport.SocketOrChannelAcceptorImpl.initialize(SocketOrChannelAcceptorImpl.java:164)
+	at com.sun.corba.se.impl.transport.CorbaTransportManagerImpl.getAcceptors(CorbaTransportManagerImpl.java:218)
+	at com.sun.corba.se.impl.transport.CorbaTransportManagerImpl.addToIORTemplate(CorbaTransportManagerImpl.java:236)
+	at com.sun.corba.se.spi.oa.ObjectAdapterBase.initializeTemplate(ObjectAdapterBase.java:122)
+	at com.sun.corba.se.impl.oa.poa.POAImpl.initialize(POAImpl.java:404)
+	at com.sun.corba.se.impl.oa.poa.POAImpl.makeRootPOA(POAImpl.java:272)
+	at com.sun.corba.se.impl.oa.poa.POAFactory$1.evaluate(POAFactory.java:205)
+	at com.sun.corba.se.impl.orbutil.closure.Future.evaluate(Future.java:46)
+	at com.sun.corba.se.impl.resolver.LocalResolverImpl.resolve(LocalResolverImpl.java:40)
+	at com.sun.corba.se.impl.resolver.CompositeResolverImpl.resolve(CompositeResolverImpl.java:45)
+	at com.sun.corba.se.impl.orb.ORBImpl.resolve_initial_references(ORBImpl.java:1169)
+	at org.wildfly.iiop.openjdk.service.CorbaPOAService.start(CorbaPOAService.java:156)
+	... 5 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.wildfly.iiop.openjdk.security.SocketFactoryBase.createServerSocket(SocketFactoryBase.java:59)
+	at org.wildfly.iiop.openjdk.security.NoSSLSocketFactory.createServerSocket(NoSSLSocketFactory.java:50)
+	at com.sun.corba.se.impl.transport.SocketOrChannelAcceptorImpl.initialize(SocketOrChannelAcceptorImpl.java:161)
+	... 16 more
+
+2019-04-05 01:19:19,651 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\activemq\journal,bindingsDirectory=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\activemq\bindings,largeMessagesDirectory=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\activemq\largemessages,pagingDirectory=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\activemq\paging)
+2019-04-05 01:19:19,678 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221013: Using NIO Journal
+2019-04-05 01:19:19,759 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-04-05 01:19:19,762 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+2019-04-05 01:19:19,764 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+2019-04-05 01:19:19,766 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+2019-04-05 01:19:20,335 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-3) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2019-04-05 01:19:20,336 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-6) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2019-04-05 01:19:20,336 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-7) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2019-04-05 01:19:20,335 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-2) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2019-04-05 01:19:20,435 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221007: Server is now live
+2019-04-05 01:19:20,435 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221001: Apache ActiveMQ Artemis Message Broker version 1.5.5.jbossorg-008 [default, nodeID=3c246acb-5715-11e9-82a1-025067aa0bed] 
+2019-04-05 01:19:20,449 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 68) AMQ221003: Deploying queue jms.queue.ExpiryQueue
+2019-04-05 01:19:20,504 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 70) AMQ221003: Deploying queue jms.queue.DLQ
+2019-04-05 01:19:20,511 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-7) WFLYJCA0007: Registered connection factory java:/JmsXA
+2019-04-05 01:19:20,517 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 67) WFLYMSGAMQ0002: Bound messaging object to jndi name java:/ConnectionFactory
+2019-04-05 01:19:20,518 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 69) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2019-04-05 01:19:20,559 INFO  [org.apache.activemq.artemis.ra] (MSC service thread 1-7) Resource adaptor started
+2019-04-05 01:19:20,560 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-7) IJ020002: Deployed: file://RaActivatoractivemq-ra
+2019-04-05 01:19:20,561 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-5) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2019-04-05 01:19:20,561 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-4) WFLYJCA0002: Bound JCA ConnectionFactory [java:/JmsXA]
+2019-04-05 01:19:20,565 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("add") failed - address: ([("subsystem" => "iiop-openjdk")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.iiop-openjdk.poa-service.rootpoa" => "WFLYIIOP0098: Failed to resolve initial reference RootPOA
+    Caused by: org.omg.CORBA.COMM_FAILURE:   vmcid: SUN  minor code: 216  completed: No
+    Caused by: java.net.BindException: Address already in use: bind"}}
+2019-04-05 01:19:20,620 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.iiop-openjdk.poa-service.rootpoa: WFLYIIOP0098: Failed to resolve initial reference RootPOA
+
+2019-04-05 01:19:20,649 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-04-05 01:19:20,653 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) started (with errors) in 6791ms - Started 307 of 578 services (4 services failed or missing dependencies, 362 services are lazy, passive or on-demand)
+2019-04-05 01:22:24,581 INFO  [org.jboss.as.server] (main) WFLYSRV0240: ProcessController has signalled to shut down; shutting down
+2019-04-05 01:22:24,600 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-04-05 01:22:24,632 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-2) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2019-04-05 01:22:24,633 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 21) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2019-04-05 01:22:24,642 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-4) WFLYJCA0011: Unbound JCA ConnectionFactory [java:/JmsXA]
+2019-04-05 01:22:24,651 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0019: Host default-host stopping
+2019-04-05 01:22:24,651 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTPS listener https suspending
+2019-04-05 01:22:24,654 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.1.1.2:8443
+2019-04-05 01:22:24,658 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2019-04-05 01:22:24,724 INFO  [org.apache.activemq.artemis.ra] (ServerService Thread Pool -- 10) AMQ151003: resource adaptor stopped
+2019-04-05 01:22:24,801 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 10) AMQ221002: Apache ActiveMQ Artemis Message Broker version 1.5.5.jbossorg-008 [3c246acb-5715-11e9-82a1-025067aa0bed] stopped, uptime 3 minutes
+2019-04-05 01:22:24,802 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTP listener default suspending
+2019-04-05 01:22:24,802 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.1.1.2:8080
+2019-04-05 01:22:24,803 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 1.4.18.Final stopping
+2019-04-05 01:22:24,880 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) stopped in 285ms
+2019-04-05 01:22:52,028 INFO  [org.jboss.modules] (main) JBoss Modules version 1.6.1.Final
+2019-04-05 01:22:52,379 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.7.SP1
+2019-04-05 01:22:52,516 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0049: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) starting
+2019-04-05 01:22:52,517 DEBUG [org.jboss.as.config] (MSC service thread 1-8) Configured system properties:
+	[Server:server-one] = 
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Java\jre1.8.0_201\lib\endorsed
+	java.ext.dirs = C:\Java\jre1.8.0_201\lib\ext;C:\Windows\Sun\Java\lib\ext
+	java.home = C:\Java\jre1.8.0_201
+	java.io.tmpdir = C:\Users\Meske\AppData\Local\Temp\
+	java.library.path = C:\Java\jre1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\Meske\AppData\Local\Microsoft\WindowsApps;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_201-b09
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_201
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.201-b09
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.domain.base.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain
+	jboss.domain.config.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\configuration
+	jboss.home.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer
+	jboss.host.name = desktop-ailu0cm
+	jboss.modules.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = slave:server-one
+	jboss.qualified.host.name = desktop-ailu0cm
+	jboss.server.base.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one
+	jboss.server.config.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\configuration
+	jboss.server.data.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data
+	jboss.server.deploy.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\content
+	jboss.server.log.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\log
+	jboss.server.name = server-one
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\tmp
+	line.separator = 
+
+	logging.configuration = file:/E:/FAKS/Materijali%20-%20AT/2019/Project%20Workspace/ServerCluster/SlaveServer/domain/servers/server-one/data/logging.properties
+	module.path = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\modules
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Java\jre1.8.0_201\lib\resources.jar;C:\Java\jre1.8.0_201\lib\rt.jar;C:\Java\jre1.8.0_201\lib\sunrsasign.jar;C:\Java\jre1.8.0_201\lib\jsse.jar;C:\Java\jre1.8.0_201\lib\jce.jar;C:\Java\jre1.8.0_201\lib\charsets.jar;C:\Java\jre1.8.0_201\lib\jfr.jar;C:\Java\jre1.8.0_201\classes
+	sun.boot.library.path = C:\Java\jre1.8.0_201\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\jboss-modules.jar -mp E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\modules org.jboss.as.server
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = US
+	user.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer
+	user.home = C:\Users\Meske
+	user.language = en
+	user.name = Meske
+	user.script = 
+	user.timezone = Europe/Prague
+	user.variant = 
+2019-04-05 01:22:52,518 DEBUG [org.jboss.as.config] (MSC service thread 1-8) VM Arguments: -D[Server:server-one] -Xms64m -Xmx512m -XX:MetaspaceSize=96m -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.home.dir=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer -Djboss.modules.system.pkgs=org.jboss.byteman -Djboss.server.log.dir=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\log -Djboss.server.temp.dir=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\tmp -Djboss.server.data.dir=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data -Dlogging.configuration=file:/E:/FAKS/Materijali%20-%20AT/2019/Project%20Workspace/ServerCluster/SlaveServer/domain/servers/server-one/data/logging.properties 
+2019-04-05 01:22:52,593 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.5.4.Final
+2019-04-05 01:22:52,599 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.5.4.Final
+2019-04-05 01:22:52,766 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 5.0.5.Final
+2019-04-05 01:22:53,261 INFO  [org.wildfly.security] (ServerService Thread Pool -- 2) ELY00001: WildFly Elytron version 1.1.6.Final
+2019-04-05 01:22:55,226 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 35) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-04-05 01:22:55,355 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 38) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-04-05 01:22:55,433 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 42) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2019-04-05 01:22:55,447 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 43) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-04-05 01:22:55,466 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2019-04-05 01:22:55,468 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2019-04-05 01:22:55,540 INFO  [org.wildfly.iiop.openjdk] (ServerService Thread Pool -- 44) WFLYIIOP0001: Activating IIOP Subsystem
+2019-04-05 01:22:55,616 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 62) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-04-05 01:22:55,623 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 64) WFLYWS0002: Activating WebServices Extension
+2019-04-05 01:22:55,635 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 50) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-04-05 01:22:55,636 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 1.4.18.Final starting
+2019-04-05 01:22:55,638 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 54) WFLYNAM0001: Activating Naming Subsystem
+2019-04-05 01:22:55,644 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 60) WFLYSEC0002: Activating Security Subsystem
+2019-04-05 01:22:55,647 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 63) WFLYUT0014: Creating file handler for path 'E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-04-05 01:22:55,672 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 45) WFLYRS0016: RESTEasy version 3.0.24.Final
+2019-04-05 01:22:55,683 INFO  [org.jboss.as.security] (MSC service thread 1-5) WFLYSEC0001: Current PicketBox version=5.0.2.Final
+2019-04-05 01:22:55,720 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.6.Final)
+2019-04-05 01:22:55,730 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-04-05 01:22:55,762 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2019-04-05 01:22:55,776 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-04-05 01:22:56,047 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0012: Started server default-server.
+2019-04-05 01:22:56,052 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0018: Host default-host starting
+2019-04-05 01:22:56,136 INFO  [org.jboss.as.patching] (MSC service thread 1-4) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-04-05 01:22:56,146 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-04-05 01:22:56,239 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.1.1.2:8080
+2019-04-05 01:22:56,253 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTPS listener https listening on 127.1.1.2:8443
+2019-04-05 01:22:56,272 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-3) WFLYMSGAMQ0001: AIO wasn't located on this platform, it will fall back to using pure Java NIO.
+2019-04-05 01:22:56,311 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: EJB subsystem suspension complete
+2019-04-05 01:22:56,375 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBossWS 5.1.9.Final (Apache CXF 3.1.12) 
+2019-04-05 01:22:56,415 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-04-05 01:22:56,425 INFO  [org.wildfly.iiop.openjdk] (MSC service thread 1-2) WFLYIIOP0009: CORBA ORB Service started
+2019-04-05 01:22:56,439 SEVERE [javax.enterprise.resource.corba._DEFAULT_.rpc.transport] (MSC service thread 1-4) "IOP00410216: (COMM_FAILURE) Unable to create listener thread on the specified port: 3528": org.omg.CORBA.COMM_FAILURE:   vmcid: SUN  minor code: 216  completed: No
+	at com.sun.corba.se.impl.logging.ORBUtilSystemException.createListenerFailed(ORBUtilSystemException.java:2632)
+	at com.sun.corba.se.impl.logging.ORBUtilSystemException.createListenerFailed(ORBUtilSystemException.java:2651)
+	at com.sun.corba.se.impl.transport.SocketOrChannelAcceptorImpl.initialize(SocketOrChannelAcceptorImpl.java:164)
+	at com.sun.corba.se.impl.transport.CorbaTransportManagerImpl.getAcceptors(CorbaTransportManagerImpl.java:218)
+	at com.sun.corba.se.impl.transport.CorbaTransportManagerImpl.addToIORTemplate(CorbaTransportManagerImpl.java:236)
+	at com.sun.corba.se.spi.oa.ObjectAdapterBase.initializeTemplate(ObjectAdapterBase.java:122)
+	at com.sun.corba.se.impl.oa.poa.POAImpl.initialize(POAImpl.java:404)
+	at com.sun.corba.se.impl.oa.poa.POAImpl.makeRootPOA(POAImpl.java:272)
+	at com.sun.corba.se.impl.oa.poa.POAFactory$1.evaluate(POAFactory.java:205)
+	at com.sun.corba.se.impl.orbutil.closure.Future.evaluate(Future.java:46)
+	at com.sun.corba.se.impl.resolver.LocalResolverImpl.resolve(LocalResolverImpl.java:40)
+	at com.sun.corba.se.impl.resolver.CompositeResolverImpl.resolve(CompositeResolverImpl.java:45)
+	at com.sun.corba.se.impl.orb.ORBImpl.resolve_initial_references(ORBImpl.java:1169)
+	at org.wildfly.iiop.openjdk.service.CorbaPOAService.start(CorbaPOAService.java:156)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.wildfly.iiop.openjdk.security.SocketFactoryBase.createServerSocket(SocketFactoryBase.java:59)
+	at org.wildfly.iiop.openjdk.security.NoSSLSocketFactory.createServerSocket(NoSSLSocketFactory.java:50)
+	at com.sun.corba.se.impl.transport.SocketOrChannelAcceptorImpl.initialize(SocketOrChannelAcceptorImpl.java:161)
+	... 16 more
+
+2019-04-05 01:22:56,442 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-4) MSC000001: Failed to start service jboss.iiop-openjdk.poa-service.rootpoa: org.jboss.msc.service.StartException in service jboss.iiop-openjdk.poa-service.rootpoa: WFLYIIOP0098: Failed to resolve initial reference RootPOA
+	at org.wildfly.iiop.openjdk.service.CorbaPOAService.start(CorbaPOAService.java:158)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.omg.CORBA.COMM_FAILURE:   vmcid: SUN  minor code: 216  completed: No
+	at com.sun.corba.se.impl.logging.ORBUtilSystemException.createListenerFailed(ORBUtilSystemException.java:2632)
+	at com.sun.corba.se.impl.logging.ORBUtilSystemException.createListenerFailed(ORBUtilSystemException.java:2651)
+	at com.sun.corba.se.impl.transport.SocketOrChannelAcceptorImpl.initialize(SocketOrChannelAcceptorImpl.java:164)
+	at com.sun.corba.se.impl.transport.CorbaTransportManagerImpl.getAcceptors(CorbaTransportManagerImpl.java:218)
+	at com.sun.corba.se.impl.transport.CorbaTransportManagerImpl.addToIORTemplate(CorbaTransportManagerImpl.java:236)
+	at com.sun.corba.se.spi.oa.ObjectAdapterBase.initializeTemplate(ObjectAdapterBase.java:122)
+	at com.sun.corba.se.impl.oa.poa.POAImpl.initialize(POAImpl.java:404)
+	at com.sun.corba.se.impl.oa.poa.POAImpl.makeRootPOA(POAImpl.java:272)
+	at com.sun.corba.se.impl.oa.poa.POAFactory$1.evaluate(POAFactory.java:205)
+	at com.sun.corba.se.impl.orbutil.closure.Future.evaluate(Future.java:46)
+	at com.sun.corba.se.impl.resolver.LocalResolverImpl.resolve(LocalResolverImpl.java:40)
+	at com.sun.corba.se.impl.resolver.CompositeResolverImpl.resolve(CompositeResolverImpl.java:45)
+	at com.sun.corba.se.impl.orb.ORBImpl.resolve_initial_references(ORBImpl.java:1169)
+	at org.wildfly.iiop.openjdk.service.CorbaPOAService.start(CorbaPOAService.java:156)
+	... 5 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.wildfly.iiop.openjdk.security.SocketFactoryBase.createServerSocket(SocketFactoryBase.java:59)
+	at org.wildfly.iiop.openjdk.security.NoSSLSocketFactory.createServerSocket(NoSSLSocketFactory.java:50)
+	at com.sun.corba.se.impl.transport.SocketOrChannelAcceptorImpl.initialize(SocketOrChannelAcceptorImpl.java:161)
+	... 16 more
+
+2019-04-05 01:22:57,172 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\activemq\journal,bindingsDirectory=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\activemq\bindings,largeMessagesDirectory=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\activemq\largemessages,pagingDirectory=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\activemq\paging)
+2019-04-05 01:22:57,202 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221013: Using NIO Journal
+2019-04-05 01:22:57,292 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-04-05 01:22:57,297 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+2019-04-05 01:22:57,298 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+2019-04-05 01:22:57,300 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+2019-04-05 01:22:57,872 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-2) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2019-04-05 01:22:57,873 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-5) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2019-04-05 01:22:57,880 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-8) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2019-04-05 01:22:57,880 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-5) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2019-04-05 01:22:57,956 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221007: Server is now live
+2019-04-05 01:22:57,956 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221001: Apache ActiveMQ Artemis Message Broker version 1.5.5.jbossorg-008 [default, nodeID=3c246acb-5715-11e9-82a1-025067aa0bed] 
+2019-04-05 01:22:57,979 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 66) WFLYMSGAMQ0002: Bound messaging object to jndi name java:/ConnectionFactory
+2019-04-05 01:22:58,019 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 68) AMQ221003: Deploying queue jms.queue.ExpiryQueue
+2019-04-05 01:22:58,027 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-4) WFLYJCA0007: Registered connection factory java:/JmsXA
+2019-04-05 01:22:58,028 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 69) AMQ221003: Deploying queue jms.queue.DLQ
+2019-04-05 01:22:58,028 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 67) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2019-04-05 01:22:58,094 INFO  [org.apache.activemq.artemis.ra] (MSC service thread 1-4) Resource adaptor started
+2019-04-05 01:22:58,095 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-4) IJ020002: Deployed: file://RaActivatoractivemq-ra
+2019-04-05 01:22:58,097 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-5) WFLYJCA0002: Bound JCA ConnectionFactory [java:/JmsXA]
+2019-04-05 01:22:58,097 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-2) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2019-04-05 01:22:58,101 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("add") failed - address: ([("subsystem" => "iiop-openjdk")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.iiop-openjdk.poa-service.rootpoa" => "WFLYIIOP0098: Failed to resolve initial reference RootPOA
+    Caused by: org.omg.CORBA.COMM_FAILURE:   vmcid: SUN  minor code: 216  completed: No
+    Caused by: java.net.BindException: Address already in use: bind"}}
+2019-04-05 01:22:58,147 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.iiop-openjdk.poa-service.rootpoa: WFLYIIOP0098: Failed to resolve initial reference RootPOA
+
+2019-04-05 01:22:58,184 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-04-05 01:22:58,187 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) started (with errors) in 6630ms - Started 307 of 578 services (4 services failed or missing dependencies, 362 services are lazy, passive or on-demand)
+2019-04-05 01:23:12,085 INFO  [org.jboss.as.server] (main) WFLYSRV0240: ProcessController has signalled to shut down; shutting down
+2019-04-05 01:23:12,092 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-4) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2019-04-05 01:23:12,092 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-2) WFLYJCA0011: Unbound JCA ConnectionFactory [java:/JmsXA]
+2019-04-05 01:23:12,093 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-04-05 01:23:12,127 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 5) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:/ConnectionFactory
+2019-04-05 01:23:12,146 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTPS listener https suspending
+2019-04-05 01:23:12,147 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
+2019-04-05 01:23:12,148 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.1.1.2:8443
+2019-04-05 01:23:12,148 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2019-04-05 01:23:12,200 INFO  [org.apache.activemq.artemis.ra] (ServerService Thread Pool -- 25) AMQ151003: resource adaptor stopped
+2019-04-05 01:23:12,297 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 25) AMQ221002: Apache ActiveMQ Artemis Message Broker version 1.5.5.jbossorg-008 [3c246acb-5715-11e9-82a1-025067aa0bed] stopped, uptime 15.140 seconds
+2019-04-05 01:23:12,299 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTP listener default suspending
+2019-04-05 01:23:12,299 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.1.1.2:8080
+2019-04-05 01:23:12,300 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 1.4.18.Final stopping
+2019-04-05 01:23:12,345 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) stopped in 245ms
+2019-04-05 01:25:20,524 INFO  [org.jboss.modules] (main) JBoss Modules version 1.6.1.Final
+2019-04-05 01:25:20,881 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.7.SP1
+2019-04-05 01:25:21,018 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0049: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) starting
+2019-04-05 01:25:21,019 DEBUG [org.jboss.as.config] (MSC service thread 1-8) Configured system properties:
+	[Server:server-one] = 
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Java\jre1.8.0_201\lib\endorsed
+	java.ext.dirs = C:\Java\jre1.8.0_201\lib\ext;C:\Windows\Sun\Java\lib\ext
+	java.home = C:\Java\jre1.8.0_201
+	java.io.tmpdir = C:\Users\Meske\AppData\Local\Temp\
+	java.library.path = C:\Java\jre1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\Meske\AppData\Local\Microsoft\WindowsApps;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_201-b09
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_201
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.201-b09
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.domain.base.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain
+	jboss.domain.config.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\configuration
+	jboss.home.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer
+	jboss.host.name = desktop-ailu0cm
+	jboss.modules.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = slave:server-one
+	jboss.qualified.host.name = desktop-ailu0cm
+	jboss.server.base.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one
+	jboss.server.config.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\configuration
+	jboss.server.data.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data
+	jboss.server.deploy.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\content
+	jboss.server.log.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\log
+	jboss.server.name = server-one
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\tmp
+	line.separator = 
+
+	logging.configuration = file:/E:/FAKS/Materijali%20-%20AT/2019/Project%20Workspace/ServerCluster/SlaveServer/domain/servers/server-one/data/logging.properties
+	module.path = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\modules
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Java\jre1.8.0_201\lib\resources.jar;C:\Java\jre1.8.0_201\lib\rt.jar;C:\Java\jre1.8.0_201\lib\sunrsasign.jar;C:\Java\jre1.8.0_201\lib\jsse.jar;C:\Java\jre1.8.0_201\lib\jce.jar;C:\Java\jre1.8.0_201\lib\charsets.jar;C:\Java\jre1.8.0_201\lib\jfr.jar;C:\Java\jre1.8.0_201\classes
+	sun.boot.library.path = C:\Java\jre1.8.0_201\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\jboss-modules.jar -mp E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\modules org.jboss.as.server
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = US
+	user.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer
+	user.home = C:\Users\Meske
+	user.language = en
+	user.name = Meske
+	user.script = 
+	user.timezone = Europe/Prague
+	user.variant = 
+2019-04-05 01:25:21,019 DEBUG [org.jboss.as.config] (MSC service thread 1-8) VM Arguments: -D[Server:server-one] -Xms64m -Xmx512m -XX:MetaspaceSize=96m -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.home.dir=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer -Djboss.modules.system.pkgs=org.jboss.byteman -Djboss.server.log.dir=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\log -Djboss.server.temp.dir=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\tmp -Djboss.server.data.dir=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data -Dlogging.configuration=file:/E:/FAKS/Materijali%20-%20AT/2019/Project%20Workspace/ServerCluster/SlaveServer/domain/servers/server-one/data/logging.properties 
+2019-04-05 01:25:21,093 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.5.4.Final
+2019-04-05 01:25:21,101 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.5.4.Final
+2019-04-05 01:25:21,269 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 5.0.5.Final
+2019-04-05 01:25:21,777 INFO  [org.wildfly.security] (ServerService Thread Pool -- 2) ELY00001: WildFly Elytron version 1.1.6.Final
+2019-04-05 01:25:23,888 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 13) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-04-05 01:25:23,959 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 45) WFLYRS0016: RESTEasy version 3.0.24.Final
+2019-04-05 01:25:23,962 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 43) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-04-05 01:25:23,967 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 42) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2019-04-05 01:25:23,970 INFO  [org.wildfly.iiop.openjdk] (ServerService Thread Pool -- 44) WFLYIIOP0001: Activating IIOP Subsystem
+2019-04-05 01:25:24,016 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.6.Final)
+2019-04-05 01:25:24,082 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 62) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-04-05 01:25:24,088 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 64) WFLYWS0002: Activating WebServices Extension
+2019-04-05 01:25:24,091 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 54) WFLYNAM0001: Activating Naming Subsystem
+2019-04-05 01:25:24,091 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 60) WFLYSEC0002: Activating Security Subsystem
+2019-04-05 01:25:24,093 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 38) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-04-05 01:25:24,094 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 50) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-04-05 01:25:24,107 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-04-05 01:25:24,108 INFO  [org.jboss.as.security] (MSC service thread 1-7) WFLYSEC0001: Current PicketBox version=5.0.2.Final
+2019-04-05 01:25:24,180 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-04-05 01:25:24,181 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2019-04-05 01:25:24,200 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 1.4.18.Final starting
+2019-04-05 01:25:24,238 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 63) WFLYUT0014: Creating file handler for path 'E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-04-05 01:25:24,380 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2019-04-05 01:25:24,389 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2019-04-05 01:25:24,571 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: Started server default-server.
+2019-04-05 01:25:24,573 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2019-04-05 01:25:24,785 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTP listener default listening on 127.1.1.2:8080
+2019-04-05 01:25:24,830 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-1) WFLYMSGAMQ0001: AIO wasn't located on this platform, it will fall back to using pure Java NIO.
+2019-04-05 01:25:24,834 INFO  [org.jboss.as.patching] (MSC service thread 1-8) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-04-05 01:25:24,850 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0493: EJB subsystem suspension complete
+2019-04-05 01:25:24,848 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-8) WFLYDM0111: Keystore E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-04-05 01:25:24,943 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on 127.1.1.2:8443
+2019-04-05 01:25:24,999 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-04-05 01:25:25,243 INFO  [org.wildfly.iiop.openjdk] (MSC service thread 1-4) WFLYIIOP0009: CORBA ORB Service started
+2019-04-05 01:25:25,259 SEVERE [javax.enterprise.resource.corba._DEFAULT_.rpc.transport] (MSC service thread 1-4) "IOP00410216: (COMM_FAILURE) Unable to create listener thread on the specified port: 3528": org.omg.CORBA.COMM_FAILURE:   vmcid: SUN  minor code: 216  completed: No
+	at com.sun.corba.se.impl.logging.ORBUtilSystemException.createListenerFailed(ORBUtilSystemException.java:2632)
+	at com.sun.corba.se.impl.logging.ORBUtilSystemException.createListenerFailed(ORBUtilSystemException.java:2651)
+	at com.sun.corba.se.impl.transport.SocketOrChannelAcceptorImpl.initialize(SocketOrChannelAcceptorImpl.java:164)
+	at com.sun.corba.se.impl.transport.CorbaTransportManagerImpl.getAcceptors(CorbaTransportManagerImpl.java:218)
+	at com.sun.corba.se.impl.transport.CorbaTransportManagerImpl.addToIORTemplate(CorbaTransportManagerImpl.java:236)
+	at com.sun.corba.se.spi.oa.ObjectAdapterBase.initializeTemplate(ObjectAdapterBase.java:122)
+	at com.sun.corba.se.impl.oa.poa.POAImpl.initialize(POAImpl.java:404)
+	at com.sun.corba.se.impl.oa.poa.POAImpl.makeRootPOA(POAImpl.java:272)
+	at com.sun.corba.se.impl.oa.poa.POAFactory$1.evaluate(POAFactory.java:205)
+	at com.sun.corba.se.impl.orbutil.closure.Future.evaluate(Future.java:46)
+	at com.sun.corba.se.impl.resolver.LocalResolverImpl.resolve(LocalResolverImpl.java:40)
+	at com.sun.corba.se.impl.resolver.CompositeResolverImpl.resolve(CompositeResolverImpl.java:45)
+	at com.sun.corba.se.impl.orb.ORBImpl.resolve_initial_references(ORBImpl.java:1169)
+	at org.wildfly.iiop.openjdk.service.CorbaPOAService.start(CorbaPOAService.java:156)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.wildfly.iiop.openjdk.security.SocketFactoryBase.createServerSocket(SocketFactoryBase.java:59)
+	at org.wildfly.iiop.openjdk.security.NoSSLSocketFactory.createServerSocket(NoSSLSocketFactory.java:50)
+	at com.sun.corba.se.impl.transport.SocketOrChannelAcceptorImpl.initialize(SocketOrChannelAcceptorImpl.java:161)
+	... 16 more
+
+2019-04-05 01:25:25,264 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-4) MSC000001: Failed to start service jboss.iiop-openjdk.poa-service.rootpoa: org.jboss.msc.service.StartException in service jboss.iiop-openjdk.poa-service.rootpoa: WFLYIIOP0098: Failed to resolve initial reference RootPOA
+	at org.wildfly.iiop.openjdk.service.CorbaPOAService.start(CorbaPOAService.java:158)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.omg.CORBA.COMM_FAILURE:   vmcid: SUN  minor code: 216  completed: No
+	at com.sun.corba.se.impl.logging.ORBUtilSystemException.createListenerFailed(ORBUtilSystemException.java:2632)
+	at com.sun.corba.se.impl.logging.ORBUtilSystemException.createListenerFailed(ORBUtilSystemException.java:2651)
+	at com.sun.corba.se.impl.transport.SocketOrChannelAcceptorImpl.initialize(SocketOrChannelAcceptorImpl.java:164)
+	at com.sun.corba.se.impl.transport.CorbaTransportManagerImpl.getAcceptors(CorbaTransportManagerImpl.java:218)
+	at com.sun.corba.se.impl.transport.CorbaTransportManagerImpl.addToIORTemplate(CorbaTransportManagerImpl.java:236)
+	at com.sun.corba.se.spi.oa.ObjectAdapterBase.initializeTemplate(ObjectAdapterBase.java:122)
+	at com.sun.corba.se.impl.oa.poa.POAImpl.initialize(POAImpl.java:404)
+	at com.sun.corba.se.impl.oa.poa.POAImpl.makeRootPOA(POAImpl.java:272)
+	at com.sun.corba.se.impl.oa.poa.POAFactory$1.evaluate(POAFactory.java:205)
+	at com.sun.corba.se.impl.orbutil.closure.Future.evaluate(Future.java:46)
+	at com.sun.corba.se.impl.resolver.LocalResolverImpl.resolve(LocalResolverImpl.java:40)
+	at com.sun.corba.se.impl.resolver.CompositeResolverImpl.resolve(CompositeResolverImpl.java:45)
+	at com.sun.corba.se.impl.orb.ORBImpl.resolve_initial_references(ORBImpl.java:1169)
+	at org.wildfly.iiop.openjdk.service.CorbaPOAService.start(CorbaPOAService.java:156)
+	... 5 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.wildfly.iiop.openjdk.security.SocketFactoryBase.createServerSocket(SocketFactoryBase.java:59)
+	at org.wildfly.iiop.openjdk.security.NoSSLSocketFactory.createServerSocket(NoSSLSocketFactory.java:50)
+	at com.sun.corba.se.impl.transport.SocketOrChannelAcceptorImpl.initialize(SocketOrChannelAcceptorImpl.java:161)
+	... 16 more
+
+2019-04-05 01:25:25,272 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 5.1.9.Final (Apache CXF 3.1.12) 
+2019-04-05 01:25:25,750 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\activemq\journal,bindingsDirectory=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\activemq\bindings,largeMessagesDirectory=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\activemq\largemessages,pagingDirectory=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\activemq\paging)
+2019-04-05 01:25:25,775 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221013: Using NIO Journal
+2019-04-05 01:25:25,834 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-04-05 01:25:25,838 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+2019-04-05 01:25:25,839 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+2019-04-05 01:25:25,840 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+2019-04-05 01:25:26,545 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-1) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2019-04-05 01:25:26,546 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-8) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2019-04-05 01:25:26,545 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-5) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2019-04-05 01:25:26,546 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-3) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2019-04-05 01:25:26,663 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221007: Server is now live
+2019-04-05 01:25:26,663 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 66) AMQ221001: Apache ActiveMQ Artemis Message Broker version 1.5.5.jbossorg-008 [default, nodeID=3c246acb-5715-11e9-82a1-025067aa0bed] 
+2019-04-05 01:25:26,701 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 66) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2019-04-05 01:25:26,743 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 67) WFLYMSGAMQ0002: Bound messaging object to jndi name java:/ConnectionFactory
+2019-04-05 01:25:26,744 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 68) AMQ221003: Deploying queue jms.queue.ExpiryQueue
+2019-04-05 01:25:26,746 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-6) WFLYJCA0007: Registered connection factory java:/JmsXA
+2019-04-05 01:25:26,752 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 69) AMQ221003: Deploying queue jms.queue.DLQ
+2019-04-05 01:25:26,794 INFO  [org.apache.activemq.artemis.ra] (MSC service thread 1-6) Resource adaptor started
+2019-04-05 01:25:26,794 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-6) IJ020002: Deployed: file://RaActivatoractivemq-ra
+2019-04-05 01:25:26,796 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-7) WFLYJCA0002: Bound JCA ConnectionFactory [java:/JmsXA]
+2019-04-05 01:25:26,796 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-4) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2019-04-05 01:25:26,799 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("add") failed - address: ([("subsystem" => "iiop-openjdk")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.iiop-openjdk.poa-service.rootpoa" => "WFLYIIOP0098: Failed to resolve initial reference RootPOA
+    Caused by: org.omg.CORBA.COMM_FAILURE:   vmcid: SUN  minor code: 216  completed: No
+    Caused by: java.net.BindException: Address already in use: bind"}}
+2019-04-05 01:25:26,842 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.iiop-openjdk.poa-service.rootpoa: WFLYIIOP0098: Failed to resolve initial reference RootPOA
+
+2019-04-05 01:25:26,883 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-04-05 01:25:26,887 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) started (with errors) in 6839ms - Started 307 of 578 services (4 services failed or missing dependencies, 362 services are lazy, passive or on-demand)
+2019-04-05 01:26:24,656 INFO  [org.jboss.as.server] (main) WFLYSRV0240: ProcessController has signalled to shut down; shutting down
+2019-04-05 01:26:24,684 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-04-05 01:26:24,711 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-5) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2019-04-05 01:26:24,716 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
+2019-04-05 01:26:24,716 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-4) WFLYJCA0011: Unbound JCA ConnectionFactory [java:/JmsXA]
+2019-04-05 01:26:24,717 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 16) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2019-04-05 01:26:24,761 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTPS listener https suspending
+2019-04-05 01:26:24,768 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2019-04-05 01:26:24,772 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.1.1.2:8443
+2019-04-05 01:26:24,806 INFO  [org.apache.activemq.artemis.ra] (ServerService Thread Pool -- 16) AMQ151003: resource adaptor stopped
+2019-04-05 01:26:24,977 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 16) AMQ221002: Apache ActiveMQ Artemis Message Broker version 1.5.5.jbossorg-008 [3c246acb-5715-11e9-82a1-025067aa0bed] stopped, uptime 59.241 seconds
+2019-04-05 01:26:24,978 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2019-04-05 01:26:24,978 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.1.1.2:8080
+2019-04-05 01:26:24,979 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0004: Undertow 1.4.18.Final stopping
+2019-04-05 01:26:24,995 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) stopped in 310ms
+2019-04-05 14:23:06,694 INFO  [org.jboss.modules] (main) JBoss Modules version 1.6.1.Final
+2019-04-05 14:23:07,130 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.7.SP1
+2019-04-05 14:23:07,280 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0049: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) starting
+2019-04-05 14:23:07,282 DEBUG [org.jboss.as.config] (MSC service thread 1-8) Configured system properties:
+	[Server:server-one] = 
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Java\jre1.8.0_201\lib\endorsed
+	java.ext.dirs = C:\Java\jre1.8.0_201\lib\ext;C:\Windows\Sun\Java\lib\ext
+	java.home = C:\Java\jre1.8.0_201
+	java.io.tmpdir = C:\Users\Meske\AppData\Local\Temp\
+	java.library.path = C:\Java\jre1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\Meske\AppData\Local\Microsoft\WindowsApps;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_201-b09
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_201
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.201-b09
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.domain.base.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain
+	jboss.domain.config.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\configuration
+	jboss.home.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer
+	jboss.host.name = desktop-ailu0cm
+	jboss.modules.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = slave:server-one
+	jboss.qualified.host.name = desktop-ailu0cm
+	jboss.server.base.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one
+	jboss.server.config.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\configuration
+	jboss.server.data.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data
+	jboss.server.deploy.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\content
+	jboss.server.log.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\log
+	jboss.server.name = server-one
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\tmp
+	line.separator = 
+
+	logging.configuration = file:/E:/FAKS/Materijali%20-%20AT/2019/Project%20Workspace/ServerCluster/SlaveServer/domain/servers/server-one/data/logging.properties
+	module.path = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\modules
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Java\jre1.8.0_201\lib\resources.jar;C:\Java\jre1.8.0_201\lib\rt.jar;C:\Java\jre1.8.0_201\lib\sunrsasign.jar;C:\Java\jre1.8.0_201\lib\jsse.jar;C:\Java\jre1.8.0_201\lib\jce.jar;C:\Java\jre1.8.0_201\lib\charsets.jar;C:\Java\jre1.8.0_201\lib\jfr.jar;C:\Java\jre1.8.0_201\classes
+	sun.boot.library.path = C:\Java\jre1.8.0_201\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\jboss-modules.jar -mp E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\modules org.jboss.as.server
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	user.country = US
+	user.dir = E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer
+	user.home = C:\Users\Meske
+	user.language = en
+	user.name = Meske
+	user.script = 
+	user.timezone = Europe/Prague
+	user.variant = 
+2019-04-05 14:23:07,283 DEBUG [org.jboss.as.config] (MSC service thread 1-8) VM Arguments: -D[Server:server-one] -Xms64m -Xmx512m -XX:MetaspaceSize=96m -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.home.dir=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer -Djboss.modules.system.pkgs=org.jboss.byteman -Djboss.server.log.dir=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\log -Djboss.server.temp.dir=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\tmp -Djboss.server.data.dir=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data -Dlogging.configuration=file:/E:/FAKS/Materijali%20-%20AT/2019/Project%20Workspace/ServerCluster/SlaveServer/domain/servers/server-one/data/logging.properties 
+2019-04-05 14:23:07,370 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.5.4.Final
+2019-04-05 14:23:07,378 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.5.4.Final
+2019-04-05 14:23:07,561 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 5.0.5.Final
+2019-04-05 14:23:08,125 INFO  [org.wildfly.security] (ServerService Thread Pool -- 2) ELY00001: WildFly Elytron version 1.1.6.Final
+2019-04-05 14:23:10,299 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 24) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-04-05 14:23:10,406 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 60) WFLYSEC0002: Activating Security Subsystem
+2019-04-05 14:23:10,414 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 54) WFLYNAM0001: Activating Naming Subsystem
+2019-04-05 14:23:10,431 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 45) WFLYRS0016: RESTEasy version 3.0.24.Final
+2019-04-05 14:23:10,435 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 50) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2019-04-05 14:23:10,437 INFO  [org.wildfly.iiop.openjdk] (ServerService Thread Pool -- 44) WFLYIIOP0001: Activating IIOP Subsystem
+2019-04-05 14:23:10,441 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 42) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2019-04-05 14:23:10,444 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 62) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-04-05 14:23:10,465 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 64) WFLYWS0002: Activating WebServices Extension
+2019-04-05 14:23:10,494 INFO  [org.jboss.as.security] (MSC service thread 1-8) WFLYSEC0001: Current PicketBox version=5.0.2.Final
+2019-04-05 14:23:10,504 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 43) WFLYCLINF0001: Activating Infinispan subsystem.
+2019-04-05 14:23:10,573 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 63) WFLYUT0014: Creating file handler for path 'E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2019-04-05 14:23:10,581 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0003: Undertow 1.4.18.Final starting
+2019-04-05 14:23:10,594 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.6.Final)
+2019-04-05 14:23:10,673 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 38) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-04-05 14:23:10,675 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-04-05 14:23:10,675 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2019-04-05 14:23:10,679 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2019-04-05 14:23:10,818 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2019-04-05 14:23:10,821 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2019-04-05 14:23:11,662 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0012: Started server default-server.
+2019-04-05 14:23:11,664 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0018: Host default-host starting
+2019-04-05 14:23:11,788 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on 127.1.1.2:8080
+2019-04-05 14:23:11,860 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0493: EJB subsystem suspension complete
+2019-04-05 14:23:11,979 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-04-05 14:23:12,078 INFO  [org.wildfly.iiop.openjdk] (MSC service thread 1-2) WFLYIIOP0009: CORBA ORB Service started
+2019-04-05 14:23:12,094 SEVERE [javax.enterprise.resource.corba._DEFAULT_.rpc.transport] (MSC service thread 1-2) "IOP00410216: (COMM_FAILURE) Unable to create listener thread on the specified port: 3528": org.omg.CORBA.COMM_FAILURE:   vmcid: SUN  minor code: 216  completed: No
+	at com.sun.corba.se.impl.logging.ORBUtilSystemException.createListenerFailed(ORBUtilSystemException.java:2632)
+	at com.sun.corba.se.impl.logging.ORBUtilSystemException.createListenerFailed(ORBUtilSystemException.java:2651)
+	at com.sun.corba.se.impl.transport.SocketOrChannelAcceptorImpl.initialize(SocketOrChannelAcceptorImpl.java:164)
+	at com.sun.corba.se.impl.transport.CorbaTransportManagerImpl.getAcceptors(CorbaTransportManagerImpl.java:218)
+	at com.sun.corba.se.impl.transport.CorbaTransportManagerImpl.addToIORTemplate(CorbaTransportManagerImpl.java:236)
+	at com.sun.corba.se.spi.oa.ObjectAdapterBase.initializeTemplate(ObjectAdapterBase.java:122)
+	at com.sun.corba.se.impl.oa.poa.POAImpl.initialize(POAImpl.java:404)
+	at com.sun.corba.se.impl.oa.poa.POAImpl.makeRootPOA(POAImpl.java:272)
+	at com.sun.corba.se.impl.oa.poa.POAFactory$1.evaluate(POAFactory.java:205)
+	at com.sun.corba.se.impl.orbutil.closure.Future.evaluate(Future.java:46)
+	at com.sun.corba.se.impl.resolver.LocalResolverImpl.resolve(LocalResolverImpl.java:40)
+	at com.sun.corba.se.impl.resolver.CompositeResolverImpl.resolve(CompositeResolverImpl.java:45)
+	at com.sun.corba.se.impl.orb.ORBImpl.resolve_initial_references(ORBImpl.java:1169)
+	at org.wildfly.iiop.openjdk.service.CorbaPOAService.start(CorbaPOAService.java:156)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.wildfly.iiop.openjdk.security.SocketFactoryBase.createServerSocket(SocketFactoryBase.java:59)
+	at org.wildfly.iiop.openjdk.security.NoSSLSocketFactory.createServerSocket(NoSSLSocketFactory.java:50)
+	at com.sun.corba.se.impl.transport.SocketOrChannelAcceptorImpl.initialize(SocketOrChannelAcceptorImpl.java:161)
+	... 16 more
+
+2019-04-05 14:23:12,097 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-2) MSC000001: Failed to start service jboss.iiop-openjdk.poa-service.rootpoa: org.jboss.msc.service.StartException in service jboss.iiop-openjdk.poa-service.rootpoa: WFLYIIOP0098: Failed to resolve initial reference RootPOA
+	at org.wildfly.iiop.openjdk.service.CorbaPOAService.start(CorbaPOAService.java:158)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.omg.CORBA.COMM_FAILURE:   vmcid: SUN  minor code: 216  completed: No
+	at com.sun.corba.se.impl.logging.ORBUtilSystemException.createListenerFailed(ORBUtilSystemException.java:2632)
+	at com.sun.corba.se.impl.logging.ORBUtilSystemException.createListenerFailed(ORBUtilSystemException.java:2651)
+	at com.sun.corba.se.impl.transport.SocketOrChannelAcceptorImpl.initialize(SocketOrChannelAcceptorImpl.java:164)
+	at com.sun.corba.se.impl.transport.CorbaTransportManagerImpl.getAcceptors(CorbaTransportManagerImpl.java:218)
+	at com.sun.corba.se.impl.transport.CorbaTransportManagerImpl.addToIORTemplate(CorbaTransportManagerImpl.java:236)
+	at com.sun.corba.se.spi.oa.ObjectAdapterBase.initializeTemplate(ObjectAdapterBase.java:122)
+	at com.sun.corba.se.impl.oa.poa.POAImpl.initialize(POAImpl.java:404)
+	at com.sun.corba.se.impl.oa.poa.POAImpl.makeRootPOA(POAImpl.java:272)
+	at com.sun.corba.se.impl.oa.poa.POAFactory$1.evaluate(POAFactory.java:205)
+	at com.sun.corba.se.impl.orbutil.closure.Future.evaluate(Future.java:46)
+	at com.sun.corba.se.impl.resolver.LocalResolverImpl.resolve(LocalResolverImpl.java:40)
+	at com.sun.corba.se.impl.resolver.CompositeResolverImpl.resolve(CompositeResolverImpl.java:45)
+	at com.sun.corba.se.impl.orb.ORBImpl.resolve_initial_references(ORBImpl.java:1169)
+	at org.wildfly.iiop.openjdk.service.CorbaPOAService.start(CorbaPOAService.java:156)
+	... 5 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.wildfly.iiop.openjdk.security.SocketFactoryBase.createServerSocket(SocketFactoryBase.java:59)
+	at org.wildfly.iiop.openjdk.security.NoSSLSocketFactory.createServerSocket(NoSSLSocketFactory.java:50)
+	at com.sun.corba.se.impl.transport.SocketOrChannelAcceptorImpl.initialize(SocketOrChannelAcceptorImpl.java:161)
+	... 16 more
+
+2019-04-05 14:23:18,645 INFO  [org.jboss.as.patching] (MSC service thread 1-3) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2019-04-05 14:23:18,650 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-8) WFLYMSGAMQ0001: AIO wasn't located on this platform, it will fall back to using pure Java NIO.
+2019-04-05 14:23:18,659 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-04-05 14:23:18,709 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 127.1.1.2:8443
+2019-04-05 14:23:19,538 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 67) AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\activemq\journal,bindingsDirectory=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\activemq\bindings,largeMessagesDirectory=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\activemq\largemessages,pagingDirectory=E:\FAKS\Materijali - AT\2019\Project Workspace\ServerCluster\SlaveServer\domain\servers\server-one\data\activemq\paging)
+2019-04-05 14:23:19,569 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 67) AMQ221013: Using NIO Journal
+2019-04-05 14:23:19,640 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 67) AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-04-05 14:23:19,759 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 67) AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+2019-04-05 14:23:19,760 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 67) AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+2019-04-05 14:23:19,761 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 67) AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+2019-04-05 14:23:20,349 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-7) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2019-04-05 14:23:20,354 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-1) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2019-04-05 14:23:20,354 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-1) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor-throughput acceptor
+2019-04-05 14:23:20,349 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-6) WFLYMSGAMQ0016: Registered HTTP upgrade for activemq-remoting protocol handled by http-acceptor acceptor
+2019-04-05 14:23:20,693 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 67) AMQ221007: Server is now live
+2019-04-05 14:23:20,693 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 67) AMQ221001: Apache ActiveMQ Artemis Message Broker version 1.5.5.jbossorg-008 [default, nodeID=3c246acb-5715-11e9-82a1-025067aa0bed] 
+2019-04-05 14:23:20,713 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 67) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2019-04-05 14:23:20,747 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 70) AMQ221003: Deploying queue jms.queue.DLQ
+2019-04-05 14:23:20,764 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 69) WFLYMSGAMQ0002: Bound messaging object to jndi name java:/ConnectionFactory
+2019-04-05 14:23:20,764 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 68) AMQ221003: Deploying queue jms.queue.ExpiryQueue
+2019-04-05 14:23:20,785 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-1) WFLYJCA0007: Registered connection factory java:/JmsXA
+2019-04-05 14:23:20,842 INFO  [org.apache.activemq.artemis.ra] (MSC service thread 1-1) Resource adaptor started
+2019-04-05 14:23:20,842 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-1) IJ020002: Deployed: file://RaActivatoractivemq-ra
+2019-04-05 14:23:20,844 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-1) WFLYJCA0002: Bound JCA ConnectionFactory [java:/JmsXA]
+2019-04-05 14:23:20,845 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-8) WFLYMSGAMQ0002: Bound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2019-04-05 14:23:21,184 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.1.9.Final (Apache CXF 3.1.12) 
+2019-04-05 14:23:21,195 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("add") failed - address: ([("subsystem" => "iiop-openjdk")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.iiop-openjdk.poa-service.rootpoa" => "WFLYIIOP0098: Failed to resolve initial reference RootPOA
+    Caused by: org.omg.CORBA.COMM_FAILURE:   vmcid: SUN  minor code: 216  completed: No
+    Caused by: java.net.BindException: Address already in use: bind"}}
+2019-04-05 14:23:21,454 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.iiop-openjdk.poa-service.rootpoa: WFLYIIOP0098: Failed to resolve initial reference RootPOA
+
+2019-04-05 14:23:21,501 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-04-05 14:23:21,517 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) started (with errors) in 15348ms - Started 307 of 578 services (4 services failed or missing dependencies, 362 services are lazy, passive or on-demand)
+2019-04-05 14:48:26,303 INFO  [org.jboss.as.server] (main) WFLYSRV0240: ProcessController has signalled to shut down; shutting down
+2019-04-05 14:48:26,329 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-04-05 14:48:26,429 INFO  [org.wildfly.extension.messaging-activemq] (MSC service thread 1-3) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2019-04-05 14:48:26,446 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-1) WFLYJCA0011: Unbound JCA ConnectionFactory [java:/JmsXA]
+2019-04-05 14:48:26,447 INFO  [org.wildfly.extension.messaging-activemq] (ServerService Thread Pool -- 22) WFLYMSGAMQ0006: Unbound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2019-04-05 14:48:26,448 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTPS listener https suspending
+2019-04-05 14:48:26,457 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.1.1.2:8443
+2019-04-05 14:48:26,458 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0019: Host default-host stopping
+2019-04-05 14:48:26,510 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2019-04-05 14:48:26,625 INFO  [org.apache.activemq.artemis.ra] (ServerService Thread Pool -- 72) AMQ151003: resource adaptor stopped
+2019-04-05 14:48:26,727 INFO  [org.apache.activemq.artemis.core.server] (ServerService Thread Pool -- 72) AMQ221002: Apache ActiveMQ Artemis Message Broker version 1.5.5.jbossorg-008 [3c246acb-5715-11e9-82a1-025067aa0bed] stopped, uptime 25 minutes
+2019-04-05 14:48:26,740 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2019-04-05 14:48:26,741 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.1.1.2:8080
+2019-04-05 14:48:26,741 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0004: Undertow 1.4.18.Final stopping
+2019-04-05 14:48:26,835 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) stopped in 506ms

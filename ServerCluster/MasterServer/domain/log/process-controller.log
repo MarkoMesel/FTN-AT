@@ -1,0 +1,4 @@
+2019-04-05 14:47:43,406 INFO  [org.jboss.modules] (main) JBoss Modules version 1.6.1.Final
+2019-04-05 14:47:43,836 INFO  [org.jboss.as.process.Host Controller.status] (main) WFLYPC0018: Starting process 'Host Controller'
+2019-04-05 14:47:47,841 INFO  [org.jboss.as.process.Server:server-one.status] (ProcessController-threads - 3) WFLYPC0018: Starting process 'Server:server-one'
+2019-04-05 14:47:51,678 INFO  [org.jboss.as.process.Server:server-two.status] (ProcessController-threads - 3) WFLYPC0018: Starting process 'Server:server-two'

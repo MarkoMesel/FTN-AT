@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="angApp">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-2.0.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<meta charset="ISO-8859-1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="js/angularapp.js"></script>
+
+<title>KLIJENTSKA APLIKACIJA</title>
+
+<style type="text/css">
+
+</style>
+
+</head>
+<body>
+	<!-- 
+	<div ng-controller="angCtrl">
+        <table border="1">
+            <tr>
+                <td>Book Name</td>
+                <td ng-bind="book"></td>
+            </tr>
+            <tr>
+                <td>Author</td>
+                <td ng-bind="author"></td>
+            </tr>
+        </table>
+    </div>
+    -->
+	<div class="container">
+	  <div class="row">
+	    <form class="form-horizontal">
+	      <div class="form-group">
+	        <select name="tipo" id="tipoProveedor" style="width: 344px" class="form-control pull-left">
+	    <option value="todos">Todos</option>
+	  </select>
+	        <label for="tipo" class="control-label col-sm-2 pull-left">Tipo</label>
+	
+	      </div>
+	      <div class="form-group">
+	        <select name="idFamilia" id="idFamilia" style="width: 344px" class="form-control pull-left">
+	    <option value="0">Seleccione</option>
+	  </select>
+	        <label for="idFamilia" class="control-label col-sm-2 pull-left">Familia</label>	
+	      </div>
+	    </form>
+	  </div>
+	</div>
+</body>
+</html>

@@ -1,10 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="angApp">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-2.0.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <meta charset="ISO-8859-1">
+
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="js/angularapp.js"></script>
+
 <title>KLIJENTSKA APLIKACIJA</title>
+
+<style type="text/css">
+
+</style>
+
 </head>
 <body>
-
+	<!-- 
+	<div ng-controller="angCtrl">
+        <table border="1">
+            <tr>
+                <td>Book Name</td>
+                <td ng-bind="book"></td>
+            </tr>
+            <tr>
+                <td>Author</td>
+                <td ng-bind="author"></td>
+            </tr>
+        </table>
+    </div>
+    -->
+    <h1 class="pb-4" align="center" ><strong>Klijentska Aplikacija</strong></h1>
+    
+	<div class="container w-50 border">
+	    <div class="row form-inline" >
+		    <div class="col" align="center">
+		    	<h3 class="" ><strong>Agent Communication</strong></h3>
+		    </div>
+	    </div>
+	    <div class="row form-inline">
+	    	<div class="col-3">
+	    		<span class="">Sender: </span>
+	    	</div>
+	    	<div class="col">
+	    		<select>
+	            	<option value="">-</option>
+	            </select>
+	    	</div>
+	    </div>    
+	    <div class="row form-inline">
+	    	<div class="col-3">
+	    		<span class="">Receiver: </span>
+	    	</div>
+	    	<div class="col">
+	    		<select>
+	            	<option value="">-</option>
+	            </select>
+	    	</div>
+	    </div> 
+	    <div class="row form-inline">
+	    	<div class="col-3">
+	    		<span class="">Performative: </span>
+	    	</div>
+	    	<div class="col">
+	    		<select>
+	            	<option value="">-</option>
+	            </select>
+	    	</div>
+	    </div>    
+	    <div class="row form-inline">
+	    	<div class="col-3">
+	    		<span class="">Content: </span>
+	    	</div>
+	    	<div class="col">
+	    		<input></input>
+	    	</div>
+	    </div>
+	    <div class="row form-inline">
+	    	<div class="col" align="center">
+	    		<button class="" type="button ">Send Message</button>
+	    	</div>
+	    </div>
+    </div>
+<!--
+	<div class="w-50"  align="center">
+    	  	<button class="w-50" align="center" type="button ">Send Message</button>
+    </div>
+-->
+	
 </body>
 </html>

@@ -9356,3 +9356,1415 @@ java.util.concurrent.TimeoutException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+!SESSION 2019-05-23 20:12:00.049 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.core 1 0 2019-05-23 20:12:06.578
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-05-23 20:12:09.288
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-05-23 20:12:09.288
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@441762b8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2d2fe68a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-23 20:12:28.977
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Meske'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-05-23 20:12:45.152
+!MESSAGE Server ‘org.jboss.tools’ failed with exception: Bad Gateway. ; version: 2.0.7.v20180504-0806
+!STACK 0
+org.apache.http.client.HttpResponseException: Bad Gateway
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseHandler.handleResponse(HttpResponses.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:1)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses.getContentWithProgress(HttpResponses.java:51)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:65)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.github.camel-tooling.eclipse.client 4 0 2019-05-23 21:07:20.741
+!MESSAGE Cannot get the Camel LSP Server jar.
+!STACK 0
+java.net.URISyntaxException: Illegal character in path at index 24: file:/E:/FAKS/Materijali - AT/2019/Eclipse/eclipse/plugins/com.github.camel-tooling.eclipse.client_1.0.0.201902050715/libs/camel-lsp-server-1.1.0-SNAPSHOT.jar
+	at java.net.URI$Parser.fail(Unknown Source)
+	at java.net.URI$Parser.checkChars(Unknown Source)
+	at java.net.URI$Parser.parseHierarchical(Unknown Source)
+	at java.net.URI$Parser.parse(Unknown Source)
+	at java.net.URI.<init>(Unknown Source)
+	at java.net.URL.toURI(Unknown Source)
+	at com.github.cameltooling.eclipse.client.CamelLSPStreamConnectionProvider.computeCamelLanguageServerJarPath(CamelLSPStreamConnectionProvider.java:60)
+	at com.github.cameltooling.eclipse.client.CamelLSPStreamConnectionProvider.computeCommands(CamelLSPStreamConnectionProvider.java:51)
+	at com.github.cameltooling.eclipse.client.CamelLSPStreamConnectionProvider.<init>(CamelLSPStreamConnectionProvider.java:39)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:190)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.createConnectionProvider(LanguageServersRegistry.java:115)
+	at org.eclipse.lsp4e.LanguageServerWrapper.start(LanguageServerWrapper.java:192)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getInitializedServer(LanguageServerWrapper.java:564)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLanguageServers(LanguageServiceAccessor.java:508)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:39)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:63)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$1(CodeMiningManager.java:159)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:160)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:126)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:115)
+	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1316)
+	at org.eclipse.jface.text.source.SourceViewer.ensureCodeMiningManagerInstalled(SourceViewer.java:1304)
+	at org.eclipse.jface.text.source.SourceViewer.setCodeMiningAnnotationPainter(SourceViewer.java:1323)
+	at org.eclipse.ui.texteditor.SourceViewerDecorationSupport.showAnnotations(SourceViewerDecorationSupport.java:834)
+	at org.eclipse.ui.texteditor.SourceViewerDecorationSupport.updateTextDecorations(SourceViewerDecorationSupport.java:305)
+	at org.eclipse.ui.texteditor.SourceViewerDecorationSupport.install(SourceViewerDecorationSupport.java:273)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.createPartControl(AbstractDecoratedTextEditor.java:453)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.createPartControl(JavaEditor.java:3121)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.createPartControl(CompilationUnitEditor.java:1533)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:156)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:102)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:367)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1001)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:411)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:333)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:193)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:108)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:77)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$1.handleEvent(PartServiceImpl.java:107)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:147)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4594)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:215)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:204)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:199)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:138)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:81)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:42)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:177)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1361)
+	at org.eclipse.ui.internal.WorkbenchPage.hidePart(WorkbenchPage.java:1591)
+	at org.eclipse.ui.internal.WorkbenchPage.closeEditor(WorkbenchPage.java:1531)
+	at org.eclipse.ui.internal.Workbench$11.run(Workbench.java:1190)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench.persist(Workbench.java:1172)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1112)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1400)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1400)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1373)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1646)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$1(WorkbenchWindow.java:1675)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1675)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1684)
+	at org.eclipse.ui.internal.WorkbenchWindow$4.close(WorkbenchWindow.java:536)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:615)
+	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4145)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1064)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:284)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1574)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4770)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1502)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2162)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2304)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4867)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1502)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2162)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2304)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4867)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1502)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2162)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4784)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2309)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3559)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+!SESSION 2019-05-24 11:27:08.622 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.core 1 0 2019-05-24 11:27:20.113
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-05-24 11:27:21.593
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-05-24 11:27:21.593
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@613ba54e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@27422187,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-24 11:27:29.373
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Meske'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-05-24 11:27:32.698
+!MESSAGE Server ‘org.jboss.tools’ failed with exception: Bad Gateway. ; version: 2.0.7.v20180504-0806
+!STACK 0
+org.apache.http.client.HttpResponseException: Bad Gateway
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseHandler.handleResponse(HttpResponses.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:1)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses.getContentWithProgress(HttpResponses.java:51)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:65)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+!SESSION 2019-05-24 19:45:10.688 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.core 1 0 2019-05-24 19:45:14.147
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-05-24 19:45:15.834
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-05-24 19:45:15.834
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1e37cb10,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1659d7d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-24 19:45:21.120
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Meske'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-05-24 19:45:25.169
+!MESSAGE Server ‘org.jboss.tools’ failed with exception: Bad Gateway. ; version: 2.0.7.v20180504-0806
+!STACK 0
+org.apache.http.client.HttpResponseException: Bad Gateway
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseHandler.handleResponse(HttpResponses.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:1)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses.getContentWithProgress(HttpResponses.java:51)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:65)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.epp.mpc.ui 1 0 2019-05-24 20:25:14.978
+!MESSAGE Performing Marketplace install request from http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=3037144
+!SESSION 2019-05-24 20:26:39.932 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.core 1 0 2019-05-24 20:26:55.034
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-05-24 20:26:56.489
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-05-24 20:26:56.489
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@747476f1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6238b10a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-24 20:27:07.384
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Meske'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-05-24 20:27:09.481
+!MESSAGE Server ‘org.jboss.tools’ failed with exception: Bad Gateway. ; version: 2.0.7.v20180504-0806
+!STACK 0
+org.apache.http.client.HttpResponseException: Bad Gateway
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseHandler.handleResponse(HttpResponses.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:1)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses.getContentWithProgress(HttpResponses.java:51)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:65)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-05-24 20:39:09.966
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 4 10050 2019-05-24 20:39:09.966
+!MESSAGE Cannot complete the request.  See the error log for details.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10004 2019-05-24 20:39:09.966
+!MESSAGE "JavaScript Development Tools" will be ignored because a newer version is already installed. 
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-05-24 20:39:09.991
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 4 10050 2019-05-24 20:39:09.991
+!MESSAGE Cannot complete the request.  See the error log for details.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10004 2019-05-24 20:39:09.991
+!MESSAGE "JavaScript Development Tools" will be ignored because a newer version is already installed. 
+
+!ENTRY org.eclipse.wst.common.project.facet.ui 4 0 2019-05-24 20:39:45.235
+!MESSAGE Could not load icon "icons/obj16/new_webserv_wiz.gif" from plugin org.jboss.tools.ws.jaxws.ui.
+
+!ENTRY org.eclipse.help 4 0 2019-05-24 20:45:48.808
+!MESSAGE Required attribute "label" missing from "topic" element in "/org.fusesource.ide.help/toc.xml" (skipping element)
+
+!ENTRY org.eclipse.help 4 0 2019-05-24 20:45:48.808
+!MESSAGE Required attribute "label" missing from "topic" element in "/org.fusesource.ide.help/toc.xml" (skipping element)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2019-05-24 20:51:16.772
+!MESSAGE Server returned lastModified <= 0 for http://www.genuitec.com/products/codemix/download/content.jar
+
+!ENTRY org.eclipse.equinox.p2.ui 4 0 2019-05-24 20:51:19.281
+!MESSAGE Unable to read repository at http://www.genuitec.com/products/codemix/download/.
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at http://www.genuitec.com/products/codemix/download/.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:129)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:671)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.p2.ui.ProvisioningUI.loadMetadataRepository(ProvisioningUI.java:447)
+	at org.eclipse.equinox.internal.p2.ui.model.MetadataRepositoryElement.getMetadataRepository(MetadataRepositoryElement.java:136)
+	at org.eclipse.equinox.internal.p2.ui.model.MetadataRepositoryElement.fetchChildren(MetadataRepositoryElement.java:80)
+	at org.eclipse.equinox.internal.p2.ui.model.RemoteQueriedElement.fetchDeferredChildren(RemoteQueriedElement.java:38)
+	at org.eclipse.ui.progress.DeferredTreeContentManager$1.run(DeferredTreeContentManager.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: http://www.genuitec.com/products/codemix/download/ is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:103)
+	... 11 more
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1002 2019-05-24 20:51:19.282
+!MESSAGE Unable to read repository at http://www.genuitec.com/products/codemix/download/.
+!STACK 0
+java.io.IOException: http://www.genuitec.com/products/codemix/download/ is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:103)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:671)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.p2.ui.ProvisioningUI.loadMetadataRepository(ProvisioningUI.java:447)
+	at org.eclipse.equinox.internal.p2.ui.model.MetadataRepositoryElement.getMetadataRepository(MetadataRepositoryElement.java:136)
+	at org.eclipse.equinox.internal.p2.ui.model.MetadataRepositoryElement.fetchChildren(MetadataRepositoryElement.java:80)
+	at org.eclipse.equinox.internal.p2.ui.model.RemoteQueriedElement.fetchDeferredChildren(RemoteQueriedElement.java:38)
+	at org.eclipse.ui.progress.DeferredTreeContentManager$1.run(DeferredTreeContentManager.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2019-05-24 20:51:20.065
+!MESSAGE Server returned lastModified <= 0 for http://www.genuitec.com/products/codemix/download/content.jar
+
+!ENTRY org.eclipse.equinox.p2.ui 4 0 2019-05-24 20:51:20.559
+!MESSAGE Unable to read repository at http://www.genuitec.com/products/codemix/download/.
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Unable to read repository at http://www.genuitec.com/products/codemix/download/.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:129)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:671)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.p2.ui.ProvisioningUI.loadMetadataRepository(ProvisioningUI.java:447)
+	at org.eclipse.equinox.internal.p2.ui.model.MetadataRepositoryElement.getMetadataRepository(MetadataRepositoryElement.java:136)
+	at org.eclipse.equinox.internal.p2.ui.model.MetadataRepositoryElement.getRepository(MetadataRepositoryElement.java:125)
+	at org.eclipse.equinox.internal.p2.ui.model.MetadataRepositoryElement.getQueryable(MetadataRepositoryElement.java:118)
+	at org.eclipse.equinox.internal.p2.ui.QueryProvider.getQueryDescriptor(QueryProvider.java:93)
+	at org.eclipse.equinox.internal.p2.ui.model.QueriedElement.fetchChildren(QueriedElement.java:106)
+	at org.eclipse.equinox.internal.p2.ui.model.MetadataRepositoryElement.fetchChildren(MetadataRepositoryElement.java:82)
+	at org.eclipse.equinox.internal.p2.ui.model.RemoteQueriedElement.fetchDeferredChildren(RemoteQueriedElement.java:38)
+	at org.eclipse.ui.progress.DeferredTreeContentManager$1.run(DeferredTreeContentManager.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: http://www.genuitec.com/products/codemix/download/ is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:103)
+	... 15 more
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1002 2019-05-24 20:51:20.560
+!MESSAGE Unable to read repository at http://www.genuitec.com/products/codemix/download/.
+!STACK 0
+java.io.IOException: http://www.genuitec.com/products/codemix/download/ is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:103)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:63)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:770)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:671)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.p2.ui.ProvisioningUI.loadMetadataRepository(ProvisioningUI.java:447)
+	at org.eclipse.equinox.internal.p2.ui.model.MetadataRepositoryElement.getMetadataRepository(MetadataRepositoryElement.java:136)
+	at org.eclipse.equinox.internal.p2.ui.model.MetadataRepositoryElement.getRepository(MetadataRepositoryElement.java:125)
+	at org.eclipse.equinox.internal.p2.ui.model.MetadataRepositoryElement.getQueryable(MetadataRepositoryElement.java:118)
+	at org.eclipse.equinox.internal.p2.ui.QueryProvider.getQueryDescriptor(QueryProvider.java:93)
+	at org.eclipse.equinox.internal.p2.ui.model.QueriedElement.fetchChildren(QueriedElement.java:106)
+	at org.eclipse.equinox.internal.p2.ui.model.MetadataRepositoryElement.fetchChildren(MetadataRepositoryElement.java:82)
+	at org.eclipse.equinox.internal.p2.ui.model.RemoteQueriedElement.fetchDeferredChildren(RemoteQueriedElement.java:38)
+	at org.eclipse.ui.progress.DeferredTreeContentManager$1.run(DeferredTreeContentManager.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.epp.mpc.ui 1 0 2019-05-24 20:53:11.987
+!MESSAGE Performing Marketplace install request from http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=4008412
+!SESSION 2019-05-24 20:57:49.900 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 2 0 2019-05-24 20:57:55.271
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-05-24 20:57:55.271
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY org.eclipse.egit.core 1 0 2019-05-24 20:57:55.547
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY com.genuitec.eclipse.code.ui 1 0 2019-05-24 20:57:57.623
+!MESSAGE CodeMix Engine will be started momentarily to support development activities
+
+!ENTRY org.eclipse.jface 2 0 2019-05-24 20:57:58.324
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-05-24 20:57:58.324
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@26f50a28,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@111ae918,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-24 20:58:08.955
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Meske'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 20:58:09.315
+!MESSAGE CodeMix Engine needs to be installed; new installation
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-05-24 20:58:17.473
+!MESSAGE Server ‘org.jboss.tools’ failed with exception: Bad Gateway. ; version: 2.0.7.v20180504-0806
+!STACK 0
+org.apache.http.client.HttpResponseException: Bad Gateway
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseHandler.handleResponse(HttpResponses.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:1)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses.getContentWithProgress(HttpResponses.java:51)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:65)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 20:58:28.142
+!MESSAGE Initializing CodeMix Engine's settings file at E:\FAKS\Materijali - AT\2019\Project Workspace\.metadata\codemix.code-workspace
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 20:58:29.603
+!MESSAGE CodeMix Engine engine has been started
+
+!ENTRY com.genuitec.eclipse.code.core 2 0 2019-05-24 20:59:11.412
+!MESSAGE The CodeMix Engine did not trigger a Ready event in a reasonable amount of time; attempting extensions retrieval.
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 20:59:11.493
+!MESSAGE The CodeMix Engine was able to receive extensions, continuing with initialization.
+
+!ENTRY org.eclipse.epp.mpc.ui 1 0 2019-05-24 20:59:20.340
+!MESSAGE Performing Marketplace install request from http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=4043160
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 20:59:52.466
+!MESSAGE Downloading http://downloads.genuitec.com/downloads/codemix/extensions/codemix.web.0.9.4.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 20:59:52.974
+!MESSAGE Installing codemix.web.0.9.4.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 20:59:53.125
+!MESSAGE Downloading http://downloads.genuitec.com/downloads/codemix/extensions/christian-kohler.path-intellisense.1.4.2.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 20:59:53.786
+!MESSAGE Downloading http://downloads.genuitec.com/downloads/codemix/extensions/formulahendry.code-runner.0.9.7.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 20:59:53.786
+!MESSAGE Installing christian-kohler.path-intellisense.1.4.2.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 20:59:56.200
+!MESSAGE Downloading http://downloads.genuitec.com/downloads/codemix/extensions/msjsdiag.debugger-for-chrome.4.11.3.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 20:59:56.201
+!MESSAGE Installing formulahendry.code-runner.0.9.7.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 20:59:58.748
+!MESSAGE Downloading http://downloads.genuitec.com/downloads/codemix/extensions/dbaeumer.vscode-eslint.1.8.2.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 20:59:58.749
+!MESSAGE Installing msjsdiag.debugger-for-chrome.4.11.3.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 20:59:59.232
+!MESSAGE Downloading http://downloads.genuitec.com/downloads/codemix/extensions/formulahendry.auto-close-tag.0.5.6.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 21:00:00.428
+!MESSAGE Installing dbaeumer.vscode-eslint.1.8.2.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 21:00:00.652
+!MESSAGE Downloading http://downloads.genuitec.com/downloads/codemix/extensions/mkaufman.HTMLHint.0.6.0.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 21:00:00.652
+!MESSAGE Installing formulahendry.auto-close-tag.0.5.6.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 21:00:09.635
+!MESSAGE Downloading http://downloads.genuitec.com/downloads/codemix/extensions/xabikos.JavaScriptSnippets.1.7.2.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 21:00:09.635
+!MESSAGE Installing mkaufman.HTMLHint.0.6.0.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 21:00:09.801
+!MESSAGE Downloading http://downloads.genuitec.com/downloads/codemix/extensions/formulahendry.auto-rename-tag.0.0.15.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 21:00:10.634
+!MESSAGE Downloading http://downloads.genuitec.com/downloads/codemix/extensions/bradgashler.htmltagwrap.0.0.7.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 21:00:15.495
+!MESSAGE Installing xabikos.JavaScriptSnippets.1.7.2.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 21:00:15.661
+!MESSAGE Installing formulahendry.auto-rename-tag.0.0.15.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 21:00:16.137
+!MESSAGE Installing bradgashler.htmltagwrap.0.0.7.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 21:00:21.068
+!MESSAGE The CodeMix Engine is being restarted to pick up latest extension changes
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 21:00:26.627
+!MESSAGE The CodeMix Engine has finally sent the Ready event to Eclipse and full services will now be available.
+
+!ENTRY com.genuitec.eclipse.code.ui 1 0 2019-05-24 21:00:27.192
+!MESSAGE Removing CodeMix editor for diff
+
+!ENTRY com.genuitec.eclipse.code.ui 1 0 2019-05-24 21:00:27.221
+!MESSAGE Removing CodeMix editor for git-rebase
+
+!ENTRY com.genuitec.eclipse.code.ui 1 0 2019-05-24 21:00:27.222
+!MESSAGE Removing CodeMix editor for git-commit
+
+!ENTRY org.eclipse.wst.common.project.facet.ui 4 0 2019-05-24 21:00:28.413
+!MESSAGE Could not load icon "icons/obj16/new_webserv_wiz.gif" from plugin org.jboss.tools.ws.jaxws.ui.
+
+!ENTRY org.eclipse.core.resources 4 2 2019-05-24 21:00:59.015
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: The connection has been closed.
+	at org.glassfish.tyrus.core.TyrusSession.checkConnectionState(TyrusSession.java:530)
+	at org.glassfish.tyrus.core.TyrusSession.getBasicRemote(TyrusSession.java:212)
+	at com.genuitec.eclipse.code.core.engine.SessionHandler.sendMessage(SessionHandler.java:720)
+	at com.genuitec.eclipse.code.core.engine.SessionHandler.access$2(SessionHandler.java:712)
+	at com.genuitec.eclipse.code.core.engine.SessionHandler$3.invoke(SessionHandler.java:684)
+	at com.sun.proxy.$Proxy75.initWorkspaceRoots(Unknown Source)
+	at com.genuitec.eclipse.code.core.engine.SessionHandler.registerProjects(SessionHandler.java:650)
+	at com.genuitec.eclipse.code.core.engine.ProjectRegistry.updateProjects(ProjectRegistry.java:168)
+	at com.genuitec.eclipse.code.core.engine.ProjectRegistry.lambda$0(ProjectRegistry.java:101)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.handleEvent(NotificationManager.java:266)
+	at org.eclipse.core.internal.resources.Workspace.broadcastEvent(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Resource.broadcastPreDeleteEvent(Resource.java:1826)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:737)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:322)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:260)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.core.resources 4 2 2019-05-24 21:05:03.257
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: The connection has been closed.
+	at org.glassfish.tyrus.core.TyrusSession.checkConnectionState(TyrusSession.java:530)
+	at org.glassfish.tyrus.core.TyrusSession.getBasicRemote(TyrusSession.java:212)
+	at com.genuitec.eclipse.code.core.engine.SessionHandler.sendMessage(SessionHandler.java:720)
+	at com.genuitec.eclipse.code.core.engine.SessionHandler.access$2(SessionHandler.java:712)
+	at com.genuitec.eclipse.code.core.engine.SessionHandler$3.invoke(SessionHandler.java:684)
+	at com.sun.proxy.$Proxy75.initWorkspaceRoots(Unknown Source)
+	at com.genuitec.eclipse.code.core.engine.SessionHandler.registerProjects(SessionHandler.java:650)
+	at com.genuitec.eclipse.code.core.engine.ProjectRegistry.updateProjects(ProjectRegistry.java:168)
+	at com.genuitec.eclipse.code.core.engine.ProjectRegistry.lambda$0(ProjectRegistry.java:101)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.handleEvent(NotificationManager.java:266)
+	at org.eclipse.core.internal.resources.Workspace.broadcastEvent(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Resource.broadcastPreDeleteEvent(Resource.java:1826)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:737)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:322)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:260)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SESSION 2019-05-24 21:05:23.343 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-05-24 21:05:27.488
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.core 1 0 2019-05-24 21:05:29.379
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY com.genuitec.eclipse.code.ui 1 0 2019-05-24 21:05:31.619
+!MESSAGE CodeMix Engine will be started momentarily to support development activities
+
+!ENTRY org.eclipse.jface 2 0 2019-05-24 21:05:32.342
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-05-24 21:05:32.343
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4158b72f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4d45b457,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-24 21:05:44.672
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Meske'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-05-24 21:05:52.523
+!MESSAGE Server ‘org.jboss.tools’ failed with exception: Bad Gateway. ; version: 2.0.7.v20180504-0806
+!STACK 0
+org.apache.http.client.HttpResponseException: Bad Gateway
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseHandler.handleResponse(HttpResponses.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:1)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses.getContentWithProgress(HttpResponses.java:51)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:65)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 21:05:54.055
+!MESSAGE CodeMix Engine engine has been started
+
+!ENTRY org.eclipse.core.resources 4 568 2019-05-24 21:06:41.893
+!MESSAGE Could not write metadata for '/TEST'.
+!STACK 0
+java.io.FileNotFoundException: E:\FAKS\Materijali - AT\2019\Project Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\TEST\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:48)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:44)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1738)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1819)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1207)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1148)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 21:06:44.045
+!MESSAGE Downloading http://downloads.genuitec.com/downloads/codemix/extensions/codemix.react.0.9.3.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 21:06:44.622
+!MESSAGE Installing codemix.react.0.9.3.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 21:06:45.662
+!MESSAGE Downloading http://downloads.genuitec.com/downloads/codemix/extensions/xabikos.ReactSnippets.2.3.0.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 21:06:47.748
+!MESSAGE Downloading http://downloads.genuitec.com/downloads/codemix/extensions/codemix.node.0.9.3.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 21:06:47.753
+!MESSAGE Installing xabikos.ReactSnippets.2.3.0.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 21:06:48.321
+!MESSAGE Installing codemix.node.0.9.3.vsix
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 21:06:51.239
+!MESSAGE The CodeMix Engine is being restarted to pick up latest extension changes
+
+!ENTRY com.genuitec.eclipse.code.ui 1 0 2019-05-24 21:07:05.064
+!MESSAGE Failed to load the ESLint library for the document e:\FAKS\Materijali - AT\2019\Project Workspace\TEST2\src\index.js. See the output for more information.
+
+!ENTRY org.eclipse.core.resources 4 2 2019-05-24 21:07:06.944
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: The connection has been closed.
+	at org.glassfish.tyrus.core.TyrusSession.checkConnectionState(TyrusSession.java:530)
+	at org.glassfish.tyrus.core.TyrusSession.getBasicRemote(TyrusSession.java:212)
+	at com.genuitec.eclipse.code.core.engine.SessionHandler.sendMessage(SessionHandler.java:720)
+	at com.genuitec.eclipse.code.core.engine.SessionHandler.access$2(SessionHandler.java:712)
+	at com.genuitec.eclipse.code.core.engine.SessionHandler$3.invoke(SessionHandler.java:684)
+	at com.sun.proxy.$Proxy69.initWorkspaceRoots(Unknown Source)
+	at com.genuitec.eclipse.code.core.engine.SessionHandler.registerProjects(SessionHandler.java:650)
+	at com.genuitec.eclipse.code.core.engine.ProjectRegistry.updateProjects(ProjectRegistry.java:168)
+	at com.genuitec.eclipse.code.core.engine.ProjectRegistry.lambda$0(ProjectRegistry.java:101)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.handleEvent(NotificationManager.java:266)
+	at org.eclipse.core.internal.resources.Workspace.broadcastEvent(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Resource.broadcastPreDeleteEvent(Resource.java:1826)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:737)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:322)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:260)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.egit.core 4 0 2019-05-24 21:07:07.000
+!MESSAGE Git team provider configuration has gone missing.
+!STACK 0
+java.nio.file.NoSuchFileException: E:\FAKS\Materijali - AT\2019\Project Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\TEST2\org.eclipse.egit.core\GitProjectData.properties
+	at sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(Unknown Source)
+	at java.nio.file.Files.newByteChannel(Unknown Source)
+	at java.nio.file.Files.newByteChannel(Unknown Source)
+	at java.nio.file.spi.FileSystemProvider.newInputStream(Unknown Source)
+	at java.nio.file.Files.newInputStream(Unknown Source)
+	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:622)
+	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:222)
+	at org.eclipse.egit.core.internal.indexdiff.GitResourceDeltaVisitor.visit(GitResourceDeltaVisitor.java:117)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$6.resourceChanged(IndexDiffCacheEntry.java:740)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:153)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.checkpoint(Workspace.java:565)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:265)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2019-05-24 21:07:07.292
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:765)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:322)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:260)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: Could not delete 'E:\FAKS\Materijali - AT\2019\Project Workspace\TEST2'.
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:142)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteProject(ResourceTree.java:446)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:853)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1775)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:322)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:260)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: Could not delete: E:\FAKS\Materijali - AT\2019\Project Workspace\TEST2.
+java.nio.file.FileSystemException: E:\FAKS\Materijali - AT\2019\Project Workspace\TEST2: The process cannot access the file because it is being used by another process.
+
+	at sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(Unknown Source)
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(Unknown Source)
+	at java.nio.file.Files.deleteIfExists(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:223)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:140)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteProject(ResourceTree.java:446)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:853)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1775)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:322)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:260)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: Could not delete 'E:\FAKS\Materijali - AT\2019\Project Workspace\TEST2'.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2019-05-24 21:07:07.294
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2019-05-24 21:07:07.294
+!MESSAGE Could not delete 'E:\FAKS\Materijali - AT\2019\Project Workspace\TEST2'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:142)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteProject(ResourceTree.java:446)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:853)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1775)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:322)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:260)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: Could not delete: E:\FAKS\Materijali - AT\2019\Project Workspace\TEST2.
+java.nio.file.FileSystemException: E:\FAKS\Materijali - AT\2019\Project Workspace\TEST2: The process cannot access the file because it is being used by another process.
+
+	at sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(Unknown Source)
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(Unknown Source)
+	at java.nio.file.Files.deleteIfExists(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:223)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:140)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteProject(ResourceTree.java:446)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:853)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1775)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:322)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:260)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2019-05-24 21:07:07.294
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2019-05-24 21:07:07.294
+!MESSAGE Could not delete: E:\FAKS\Materijali - AT\2019\Project Workspace\TEST2.
+!STACK 0
+java.nio.file.FileSystemException: E:\FAKS\Materijali - AT\2019\Project Workspace\TEST2: The process cannot access the file because it is being used by another process.
+
+	at sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(Unknown Source)
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(Unknown Source)
+	at java.nio.file.Files.deleteIfExists(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:223)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:140)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteProject(ResourceTree.java:446)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:853)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1775)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:322)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:260)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2019-05-24 21:07:07.294
+!MESSAGE Could not delete 'E:\FAKS\Materijali - AT\2019\Project Workspace\TEST2'.
+
+!ENTRY org.eclipse.core.resources 4 2 2019-05-24 21:07:18.391
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: The connection has been closed.
+	at org.glassfish.tyrus.core.TyrusSession.checkConnectionState(TyrusSession.java:530)
+	at org.glassfish.tyrus.core.TyrusSession.getBasicRemote(TyrusSession.java:212)
+	at com.genuitec.eclipse.code.core.engine.SessionHandler.sendMessage(SessionHandler.java:720)
+	at com.genuitec.eclipse.code.core.engine.SessionHandler.access$2(SessionHandler.java:712)
+	at com.genuitec.eclipse.code.core.engine.SessionHandler$3.invoke(SessionHandler.java:684)
+	at com.sun.proxy.$Proxy69.initWorkspaceRoots(Unknown Source)
+	at com.genuitec.eclipse.code.core.engine.SessionHandler.registerProjects(SessionHandler.java:650)
+	at com.genuitec.eclipse.code.core.engine.ProjectRegistry.updateProjects(ProjectRegistry.java:168)
+	at com.genuitec.eclipse.code.core.engine.ProjectRegistry.lambda$0(ProjectRegistry.java:101)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.handleEvent(NotificationManager.java:266)
+	at org.eclipse.core.internal.resources.Workspace.broadcastEvent(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Resource.broadcastPreDeleteEvent(Resource.java:1826)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:737)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:322)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:260)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.core.resources 2 2 2019-05-24 21:07:18.714
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2019-05-24 21:07:18.714
+!MESSAGE The project description file (.project) for 'TEST2' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.core.resources 4 2 2019-05-24 21:07:25.647
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: The connection has been closed.
+	at org.glassfish.tyrus.core.TyrusSession.checkConnectionState(TyrusSession.java:530)
+	at org.glassfish.tyrus.core.TyrusSession.getBasicRemote(TyrusSession.java:212)
+	at com.genuitec.eclipse.code.core.engine.SessionHandler.sendMessage(SessionHandler.java:720)
+	at com.genuitec.eclipse.code.core.engine.SessionHandler.access$2(SessionHandler.java:712)
+	at com.genuitec.eclipse.code.core.engine.SessionHandler$3.invoke(SessionHandler.java:684)
+	at com.sun.proxy.$Proxy69.initWorkspaceRoots(Unknown Source)
+	at com.genuitec.eclipse.code.core.engine.SessionHandler.registerProjects(SessionHandler.java:650)
+	at com.genuitec.eclipse.code.core.engine.ProjectRegistry.updateProjects(ProjectRegistry.java:168)
+	at com.genuitec.eclipse.code.core.engine.ProjectRegistry.lambda$0(ProjectRegistry.java:101)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:290)
+	at org.eclipse.core.internal.events.NotificationManager.handleEvent(NotificationManager.java:266)
+	at org.eclipse.core.internal.resources.Workspace.broadcastEvent(Workspace.java:374)
+	at org.eclipse.core.internal.resources.Resource.broadcastPreDeleteEvent(Resource.java:1826)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:737)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:322)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:260)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2319)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SESSION 2019-05-24 21:09:25.427 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.core 1 0 2019-05-24 21:09:30.954
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY com.genuitec.eclipse.code.ui 1 0 2019-05-24 21:09:33.049
+!MESSAGE CodeMix Engine will be started momentarily to support development activities
+
+!ENTRY org.eclipse.jface 2 0 2019-05-24 21:09:33.659
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-05-24 21:09:33.659
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1e82b631,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@42c2a1da,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-24 21:09:44.839
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Meske'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-05-24 21:09:48.592
+!MESSAGE Server ‘org.jboss.tools’ failed with exception: Bad Gateway. ; version: 2.0.7.v20180504-0806
+!STACK 0
+org.apache.http.client.HttpResponseException: Bad Gateway
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseHandler.handleResponse(HttpResponses.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:1)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses.getContentWithProgress(HttpResponses.java:51)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:65)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 21:09:51.038
+!MESSAGE CodeMix Engine engine has been started
+
+!ENTRY com.genuitec.eclipse.code.ui 1 0 2019-05-24 22:50:34.730
+!MESSAGE Failed to load the ESLint library for the document e:\FAKS\Materijali - AT\2019\Project Workspace\RA5013AT-WAR\WebContent\js\angularapp.js. See the output for more information.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2019-05-24 22:57:36.162
+!MESSAGE The server "WildFly 11 at localhost" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Java\jre1.8.0_201 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2019-05-24 22:57:38.254
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2019-05-24 22:58:02.592
+!MESSAGE Server Startup Succeeded
+!SESSION 2019-05-24 23:45:11.379 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.core 1 0 2019-05-24 23:45:22.773
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY com.genuitec.eclipse.code.ui 1 0 2019-05-24 23:45:30.635
+!MESSAGE CodeMix Engine will be started momentarily to support development activities
+
+!ENTRY org.eclipse.jface 2 0 2019-05-24 23:45:31.507
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-05-24 23:45:31.507
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4dfe14d4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@309d9033,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-24 23:45:45.577
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Meske'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-05-24 23:45:50.988
+!MESSAGE Server ‘org.jboss.tools’ failed with exception: Bad Gateway. ; version: 2.0.7.v20180504-0806
+!STACK 0
+org.apache.http.client.HttpResponseException: Bad Gateway
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseHandler.handleResponse(HttpResponses.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:1)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses.getContentWithProgress(HttpResponses.java:51)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:65)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-24 23:45:54.771
+!MESSAGE CodeMix Engine engine has been started
+!SESSION 2019-05-25 09:32:45.907 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.core 1 0 2019-05-25 09:32:58.070
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY com.genuitec.eclipse.code.ui 1 0 2019-05-25 09:33:08.034
+!MESSAGE CodeMix Engine will be started momentarily to support development activities
+
+!ENTRY org.eclipse.jface 2 0 2019-05-25 09:33:09.006
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-05-25 09:33:09.006
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@45f20384,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6d3dc0c5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-05-25 09:33:26.298
+!MESSAGE Server ‘org.jboss.tools’ failed with exception: Bad Gateway. ; version: 2.0.7.v20180504-0806
+!STACK 0
+org.apache.http.client.HttpResponseException: Bad Gateway
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseHandler.handleResponse(HttpResponses.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:88)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses$ProgressMonitorResponseStringHandler.handleResponse(HttpResponses.java:1)
+	at org.apache.http.client.fluent.Response.handleResponse(Response.java:90)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.HttpResponses.getContentWithProgress(HttpResponses.java:51)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:65)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-25 09:33:28.918
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Meske'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.genuitec.eclipse.code.core 1 0 2019-05-25 09:33:36.161
+!MESSAGE CodeMix Engine engine has been started
+
+!ENTRY org.eclipse.osgi 2 0 2019-05-25 09:33:37.205
+!MESSAGE While loading class "org.jboss.tools.openshift.internal.cdk.server.core.detection.CDKRuntimeDetector", thread "Thread[Worker-9: Searching runtimes...,5,main]" timed out waiting (5001ms) for thread "Thread[main,6,main]" to finish starting bundle "org.jboss.tools.openshift.cdk.server_3.6.0.v20181010-1259 [934]". To avoid deadlock, thread "Thread[Worker-9: Searching runtimes...,5,main]" is proceeding but "org.jboss.tools.openshift.internal.cdk.server.core.detection.CDKRuntimeDetector" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; type="osgi.bundle"; version:Version="3.6.0.v20181010-1259"; osgi.identity="org.jboss.tools.openshift.cdk.server"; singleton:="true" [id=934] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:340)
+	at org.eclipse.osgi.container.Module.start(Module.java:404)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:471)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:557)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:331)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:153)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:612)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:180)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.jboss.tools.runtime.core.internal.RuntimeExtensionManager.loadOneDeclaredRuntimeDetector(RuntimeExtensionManager.java:170)
+	at org.jboss.tools.runtime.core.internal.RuntimeExtensionManager.loadDeclaredRuntimeDetectors(RuntimeExtensionManager.java:143)
+	at org.jboss.tools.runtime.core.internal.RuntimeExtensionManager.loadInitializedRuntimeDetectors(RuntimeExtensionManager.java:81)
+	at org.jboss.tools.runtime.core.internal.RuntimeExtensionManager.getRuntimeDetectors(RuntimeExtensionManager.java:88)
+	at org.jboss.tools.runtime.core.RuntimeCoreActivator.getRuntimeDetectors(RuntimeCoreActivator.java:112)
+	at org.jboss.tools.runtime.core.internal.RuntimeCorePreferences.saveDetectorEnablement(RuntimeCorePreferences.java:50)
+	at org.jboss.tools.runtime.core.RuntimeCoreActivator.saveEnabledDetectors(RuntimeCoreActivator.java:116)
+	at org.jboss.tools.runtime.ui.RuntimeUIActivator.saveRuntimePreferences(RuntimeUIActivator.java:133)
+	at org.jboss.tools.runtime.ui.internal.startup.RuntimeScanner.wouldOpenSearchRuntimePathDialog(RuntimeScanner.java:158)
+	at org.jboss.tools.runtime.ui.internal.startup.RuntimeScanner.access$0(RuntimeScanner.java:129)
+	at org.jboss.tools.runtime.ui.internal.startup.RuntimeScanner$1.run(RuntimeScanner.java:81)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:337)
+	... 28 more
+Root exception:
+java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:337)
+	at org.eclipse.osgi.container.Module.start(Module.java:404)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:471)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:557)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:331)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:422)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:153)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:612)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:180)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.jboss.tools.runtime.core.internal.RuntimeExtensionManager.loadOneDeclaredRuntimeDetector(RuntimeExtensionManager.java:170)
+	at org.jboss.tools.runtime.core.internal.RuntimeExtensionManager.loadDeclaredRuntimeDetectors(RuntimeExtensionManager.java:143)
+	at org.jboss.tools.runtime.core.internal.RuntimeExtensionManager.loadInitializedRuntimeDetectors(RuntimeExtensionManager.java:81)
+	at org.jboss.tools.runtime.core.internal.RuntimeExtensionManager.getRuntimeDetectors(RuntimeExtensionManager.java:88)
+	at org.jboss.tools.runtime.core.RuntimeCoreActivator.getRuntimeDetectors(RuntimeCoreActivator.java:112)
+	at org.jboss.tools.runtime.core.internal.RuntimeCorePreferences.saveDetectorEnablement(RuntimeCorePreferences.java:50)
+	at org.jboss.tools.runtime.core.RuntimeCoreActivator.saveEnabledDetectors(RuntimeCoreActivator.java:116)
+	at org.jboss.tools.runtime.ui.RuntimeUIActivator.saveRuntimePreferences(RuntimeUIActivator.java:133)
+	at org.jboss.tools.runtime.ui.internal.startup.RuntimeScanner.wouldOpenSearchRuntimePathDialog(RuntimeScanner.java:158)
+	at org.jboss.tools.runtime.ui.internal.startup.RuntimeScanner.access$0(RuntimeScanner.java:129)
+	at org.jboss.tools.runtime.ui.internal.startup.RuntimeScanner$1.run(RuntimeScanner.java:81)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.genuitec.eclipse.code.ui 1 0 2019-05-25 09:34:29.516
+!MESSAGE There are task errors. See the output for details.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2019-05-25 09:39:29.581
+!MESSAGE The server "WildFly 11 at localhost" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Java\jre1.8.0_201 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2019-05-25 09:39:30.948
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2019-05-25 09:39:56.460
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2019-05-25 09:40:16.532
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2019-05-25 09:40:17.684
+!MESSAGE Server processes have terminated prematurely. Please check your server logs for more details. 
+
+!ENTRY org.jboss.tools.vpe.preview.core 4 0 2019-05-25 11:57:04.126
+!MESSAGE INVALID_CHARACTER_ERR: An invalid or illegal XML character is specified. 
+!STACK 0
+org.w3c.dom.DOMException: INVALID_CHARACTER_ERR: An invalid or illegal XML character is specified. 
+	at org.apache.xerces.dom.CoreDocumentImpl.createElement(Unknown Source)
+	at org.jboss.tools.vpe.preview.core.template.VpvDefaultTemplate.create(VpvDefaultTemplate.java:34)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.convertNode(VpvDomBuilder.java:86)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.convertNode(VpvDomBuilder.java:123)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.convertNode(VpvDomBuilder.java:123)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.convertNode(VpvDomBuilder.java:123)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.convertNode(VpvDomBuilder.java:123)
+	at org.jboss.tools.vpe.preview.core.transform.VpvDomBuilder.buildVisualModel(VpvDomBuilder.java:49)
+	at org.jboss.tools.vpe.preview.core.transform.VpvController.getVisualModel(VpvController.java:145)
+	at org.jboss.tools.vpe.preview.core.transform.VpvController.getResource(VpvController.java:62)
+	at org.jboss.tools.vpe.preview.core.server.VpvSocketProcessor.processRequest(VpvSocketProcessor.java:83)
+	at org.jboss.tools.vpe.preview.core.server.VpvSocketProcessor.run(VpvSocketProcessor.java:68)
+	at java.lang.Thread.run(Unknown Source)

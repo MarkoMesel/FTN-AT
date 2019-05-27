@@ -17,7 +17,7 @@
 		</list>
 	</section>
 	<section name="NewWizardAction">
-		<item value="com.genuitec.eclipse.code.ui.codemix.react" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item value="com.genuitec.eclipse.code.ui.codemix.javascript.file" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="com.genuitec.eclipse.code.ui.codemix.category"/>
 			<item value="com.genuitec.eclipse.code.ui.codemix.category/com.genuitec.eclipse.code.ui.codemix.examples.category"/>

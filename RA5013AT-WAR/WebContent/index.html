@@ -4,8 +4,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 	<script src="http://code.jquery.com/jquery-2.0.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-<meta charset="ISO-8859-1">
+
+	<meta charset="ISO-8859-1">
 
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
@@ -17,8 +17,10 @@
 
 </style>
 
+
 </head>
 <body>
+
 	<!-- 
 	<div ng-controller="angCtrl">
         <table border="1">
@@ -34,57 +36,102 @@
     </div>
     -->
     <h1 class="pb-4" align="center" ><strong>Klijentska Aplikacija</strong></h1>
-    
-	<div class="container w-50 border">
+
+	<div class="container border">
 	    <div class="row form-inline" >
-		    <div class="col" align="center">
+		    <div class="col border" align="center">
 		    	<h3 class="" ><strong>Agent Communication</strong></h3>
 		    </div>
 	    </div>
-	    <div class="row form-inline">
-	    	<div class="col-3">
-	    		<span class="">Sender: </span>
+	    <div class="row">
+		    <div class="col-6 border">
+		    	<div class="col form-inline">
+			    	<div class="col-4">
+			    		<span class="">Sender: </span>
+			    	</div>
+			    	<div class="col">
+			    		<select style="width:100%">
+			            	<option value="">-</option>
+			            </select>
+			    	</div>
+			    </div>
+		    	<div class="col form-inline">
+			    	<div class="col-4">
+			    		<span class="">Receiver: </span>
+			    	</div>
+			    	<div class="col">
+			    		<select style="width:100%">
+			            	<option value="">-</option>
+			            </select>
+			    	</div>
+			   	</div>
+			   	<div class="col form-inline">
+			    	<div class="col-4">
+			    		<span class="">Performative: </span>
+			    	</div>
+			    	<div class="col">
+			    		<select id="performativeSelect" style="width:100%">
+			            	<option value="">-</option>
+			            </select>
+			    	</div>
+			    </div>
+			    <div class="col form-inline">
+			    	<div class="col-4">
+			    		<span class="">Content: </span>
+			    	</div>
+			    	<div class="col">
+			    		<input style="width:100%"></input>
+			    	</div>
+			    </div>
 	    	</div>
-	    	<div class="col">
-	    		<select>
-	            	<option value="">-</option>
-	            </select>
-	    	</div>
-	    </div>    
-	    <div class="row form-inline">
-	    	<div class="col-3">
-	    		<span class="">Receiver: </span>
-	    	</div>
-	    	<div class="col">
-	    		<select>
-	            	<option value="">-</option>
-	            </select>
-	    	</div>
-	    </div> 
-	    <div class="row form-inline">
-	    	<div class="col-3">
-	    		<span class="">Performative: </span>
-	    	</div>
-	    	<div class="col">
-	    		<select>
-	            	<option value="">-</option>
-	            </select>
-	    	</div>
-	    </div>    
-	    <div class="row form-inline">
-	    	<div class="col-3">
-	    		<span class="">Content: </span>
-	    	</div>
-	    	<div class="col">
-	    		<input></input>
+	    	<div class="col-6 border">
+	    	<span class="">Console log:</span>
+    			<textarea style="width:100%"rows="3"></textarea>
 	    	</div>
 	    </div>
 	    <div class="row form-inline">
-	    	<div class="col" align="center">
+	    	<div class="col border" align="center">
 	    		<button class="" type="button ">Send Message</button>
 	    	</div>
 	    </div>
     </div>
+
+    <script>
+        var select = document.getElementById("performativeSelect");
+        var performativeArray = [
+            "ACCEPT_PROPOSAL",
+            "AGREE", 
+            "CANCEL", 
+            "CALL_FOR_PROPOSAL", 
+            "CONFIRM", 
+            "DISCONFIRM", 
+            "FAILURE", 
+            "INFORM", 
+            "INFORM_IF", 
+            "INFORM_REF", 
+            "NOT_UNDERSTOOD", 
+            "PROPAGATE", 
+            "PROPOSE", 
+            "PROXY", 
+            "QUERY_IF", 
+            "QUERY_REF",
+            "REFUSE", 
+            "REJECT_PROPOSAL", 
+            "REQUEST", 
+            "REQUEST_WHEN", 
+            "REQUEST_WHENEVER", 
+            "SUBSCRIBE",
+            "RESUME"
+        ];
+
+        for(var i = 0; i < performativeArray.length; i++) {
+            var option = document.createElement("OPTION");
+            var txt = document.createTextNode(performativeArray[i]);
+            option.appendChild(txt);
+            select.insertBefore(option, select.lastChild);
+        }
+    </script>
+
 <!--
 	<div class="w-50"  align="center">
     	  	<button class="w-50" align="center" type="button ">Send Message</button>

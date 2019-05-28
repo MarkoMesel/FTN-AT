@@ -23,5 +23,16 @@ public enum Performative {
 	REQUEST_WHEN, 
 	REQUEST_WHENEVER, 
 	SUBSCRIBE,
-	RESUME
+	RESUME;
+	
+	public static String[] getPerformativesStringArray() {
+	    Performative[] performatives = values();
+	    String[] pStrings = new String[performatives.length];
+
+	    for (int i = 0; i < performatives.length; i++) {
+	        pStrings[i] = performatives[i].name();
+	    }
+
+	    return pStrings;
+	}
 }

@@ -80,23 +80,27 @@
 			    		<span class="">Content: </span>
 			    	</div>
 			    	<div class="col">
-			    		<input style="width:100%"></input>
+			    		<input style="width:100%" />
 			    	</div>
 			    </div>
 	    	</div>
 	    	<div class="col-6 border">
 	    	<span class="">Console log:</span>
-    			<textarea style="width:100%"rows="3"></textarea>
+    			<textarea style="width:100%" rows="3" cols=""></textarea>
 	    	</div>
 	    </div>
 	    <div class="row form-inline">
 	    	<div class="col border" align="center">
 	    		<button class="" type="button ">Send Message</button>
 	    	</div>
+	    	<div class="col border" align="center">
+	    		<button class="" type="button " onclick="populatePerformativeSelect();">POPULATE PERFORMATIVE COMBOBOX</button>
+	    	</div>
 	    </div>
     </div>
 
     <script>
+		/*
         var select = document.getElementById("performativeSelect");
         var performativeArray = [
             "ACCEPT_PROPOSAL",
@@ -130,6 +134,60 @@
             option.appendChild(txt);
             select.insertBefore(option, select.lastChild);
         }
+		*/
+
+		function populatePerformativeSelect() {
+			/*
+			var select = document.getElementById("performativeSelect");
+			$http({method: "GET", url: "/rest/messages"})
+				.success(function(data){ 
+					alert("TEST!!!");
+			  	}
+			);
+			*/
+			var select = document.getElementById("performativeSelect");
+		    
+		    fetch('/RA5013AT-WAR/rest/messages')
+		    .then(response => response.text())
+		    .then(data => {
+		    	var stringFromData = JSON.stringify(data);
+		    	var trimmedString = stringFromData.substr(2,stringFromData.length-4);
+		    	var performativeArray = trimmedString.split(',');
+		    	for(var i = 0; i < performativeArray.length; i++) {
+		            var option = document.createElement("OPTION");
+		            var txt = document.createTextNode(performativeArray[i]);
+		            option.appendChild(txt);
+		            select.insertBefore(option, select.lastChild);
+		        }
+		    });
+
+		    //alert(data);
+	    	//var performativeArray = JSON.parse(data);	
+	    			    	//var performativeArray = JSON.parse(JSON.stringify(data));
+		    	//alert(performativeArray.length);
+		    /*
+		    request.onload = function () {
+		    	var data = JSON.parse(this.response)
+				//alert(TEST!!!);
+			}
+			*/
+		}
+			
+		    
+		    //xhttp.setRequestHeader("Content-type", "application/json");
+		    //xhttp.send("Your JSON Data Here");
+		    /*
+			var select = document.getElementById("performativeSelect");
+			var performativeArray = JSON.parse(data);
+        	for(var i = 0; i < performativeArray.length; i++) {
+	            var option = document.createElement("OPTION");
+	            var txt = document.createTextNode(performativeArray[i]);
+	            option.appendChild(txt);
+	            select.insertBefore(option, select.lastChild);
+	        }
+        	alert("TEST 2!!!");
+        	*/
+			
     </script>
 
 <!--

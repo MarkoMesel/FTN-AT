@@ -17,6 +17,5 @@ public class AgentType {
 	public void setModule(String module) {
 		this.module = module;
 	}
-	
-	
+
 }

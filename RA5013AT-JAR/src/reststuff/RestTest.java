@@ -3,6 +3,7 @@ package reststuff;
 import java.util.Arrays;
 
 import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -22,7 +23,7 @@ public interface RestTest {
 	public String getPerformativesList();
 	
 	//TODO: implementiraj PUT umesto POST
-	@POST
+	@PUT
 	@Path("/agents/running/{type}/{name}")
 	@Consumes("text/plain")
 	@Produces("text/plain")
@@ -43,4 +44,16 @@ public interface RestTest {
 	@Consumes("text/plain")
 	@Produces("text/plain")
 	public String getAgentTypes();
+	
+	@GET
+	@Path("/agents/running")
+	@Consumes("text/plain")
+	@Produces("text/plain")
+	public String getRunningAgents();
+	
+	@DELETE
+	@Path("/agents/running/{aid}")
+	@Consumes("text/plain")
+	@Produces("text/plain")
+	public void stopAgent(@PathParam("aid") String aid);
 }

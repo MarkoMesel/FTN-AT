@@ -73,5 +73,23 @@ public class RestTestBean implements RestTest {
 	public String getAgentTypes() {
 		return Arrays.toString(agc.getAgentTypes());
 	}
+
+	@Override
+	public String getRunningAgents() {
+		return Arrays.toString(agc.getRunningAgents());
+	}
+
+	@Override
+	public void stopAgent(String aidParam) {
+		String[] aidSplit = aidParam.split(" - ");
+		AgentType at = new AgentType();
+		at.setName(aidSplit[0]);
+		at.setModule(aidSplit[1]);
+		AID aid = new AID();
+		aid.setName(aidSplit[2]);
+		aid.setHost(agc.getAlias());
+		aid.setType(at);
+		agc.stopServerAgent(aid);
+	}
 	
 }

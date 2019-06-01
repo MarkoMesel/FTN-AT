@@ -4,7 +4,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 	<script src="http://code.jquery.com/jquery-2.0.1.min.js"></script>
-
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	
 	<meta charset="ISO-8859-1">
 
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -21,9 +23,7 @@
 </head>
 <body>
     <h1 class="pb-4" align="center" ><strong>Klijentska Aplikacija</strong></h1>
-	
-		<form id="form-createNewAgent" method="POST" enctype="text/plain" onSubmit="return postCNAInfo()">
-    	<div class="container border">
+    <div class="container w-50 border">
 	    <div class="row form-inline" >
 		    <div class="col border" align="center">
 		    	<h3 class="" ><strong>Create New Agent</strong></h3>
@@ -63,15 +63,13 @@
 	    </div>
 	    <div class="row form-inline">
 	    	<div class="col border" align="center">
-	    		<input id="createAgentBtn" name="CNABtn" type="submit" value="Create Agent"></input>
+	    		<button id="createAgentBtn" name="CNABtn" onclick="createAgent()">Create Agent</button>
 	    	</div>
 	    </div>
     </div>
-    </form>
     </br>
     </br>
-	<form id="form-startAgent" method="POST" enctype="text/plain" onSubmit="return postSSAInfo()">
-    	<div class="container border">
+    <div class="container w-50 border">
 	    <div class="row form-inline" >
 		    <div class="col border" align="center">
 		    	<h3 class="" ><strong>Start Server Agent</strong></h3>
@@ -103,43 +101,80 @@
 	    </div>
 	    <div class="row form-inline">
 	    	<div class="col border" align="center">
-	    		<input id="startAgentBtn" name="SSABtn" type="submit" value="Start Agent"></input>
+	    		<button id="startAgentBtn" name="SSABtn" onclick="startAgent()">Start Agent</button>
 	    	</div>
 	    </div>
     </div>
-    </form>
     </br>
     </br>
-	<div class="container border">
+    <div class="container w-50 border">
+	    <div class="row form-inline" >
+		    <div class="col border" align="center">
+		    	<h3 class="" ><strong>Stop Server Agent</strong></h3>
+		    </div>
+	    </div>
+	    <div class="row">
+		    <div class="col border">
+		    	<div class="col form-inline">
+			    	<div class="col-6">
+			    		<span class="">Agent Type (nam - mod): </span>
+			    	</div>
+			    	
+			    	<div class="col">
+			    		<select id="stopType" style="width:100%">
+			            	<option value="">-</option>
+			            </select>
+			    	</div>
+			    </div>
+		    	<div class="col form-inline">
+			    	<div class="col-6">
+			    		<span class="">Agent Name: </span>
+			    	</div>
+			    	<div class="col">
+			    		<input name="stopName" style="width:100%"></input>
+			    	</div>
+			   	</div>
+	    	</div>
+
+	    </div>
+	    <div class="row form-inline">
+	    	<div class="col border" align="center">
+	    		<button id="stopAgentBtn" name="STOPBtn" onclick="stopAgent()">Stop Agent</button>
+	    	</div>
+	    </div>
+    </div>
+    <br />
+    <br />
+	<div class="container w-50 border">
 	    <div class="row form-inline" >
 		    <div class="col border" align="center">
 		    	<h3 class="" ><strong>Agent Communication</strong></h3>
 		    </div>
 	    </div>
 	    <div class="row">
-		    <div class="col-6 border">
+		    <div class="col border">
 		    	<div class="col form-inline">
-			    	<div class="col-4">
+			    	<div class="col-6">
 			    		<span class="">Sender: </span>
 			    	</div>
 			    	<div class="col">
-			    		<select style="width:100%">
+			    		<select id="agSender" style="width:100%">
 			            	<option value="">-</option>
 			            </select>
 			    	</div>
 			    </div>
 		    	<div class="col form-inline">
-			    	<div class="col-4">
+			    	<div class="col-6">
 			    		<span class="">Receiver: </span>
 			    	</div>
 			    	<div class="col">
-			    		<select style="width:100%">
+			    		<select id="agReceiver" style="width:100%">
 			            	<option value="">-</option>
 			            </select>
 			    	</div>
 			   	</div>
 			   	<div class="col form-inline">
-			    	<div class="col-4">
+			    	<div class="col-6">
 			    		<span class="">Performative: </span>
 			    	</div>
 			    	<div class="col">
@@ -149,17 +184,13 @@
 			    	</div>
 			    </div>
 			    <div class="col form-inline">
-			    	<div class="col-4">
+			    	<div class="col-6">
 			    		<span class="">Content: </span>
 			    	</div>
 			    	<div class="col">
 			    		<input style="width:100%" />
 			    	</div>
 			    </div>
-	    	</div>
-	    	<div class="col-6 border">
-	    	<span class="">Console log:</span>
-    			<textarea style="width:100%" rows="3" cols=""></textarea>
 	    	</div>
 	    </div>
 	    <div class="row form-inline">
@@ -175,12 +206,10 @@
     </div>
 
     <script>
-
-    	var refreshAgentTypes = 1;
-    	var refreshRunningAgents = 1;
 	
     	window.onload = function() {
     		populatePerformativeSelect();
+    		getAgentTypes();
     	};
 
 		function populatePerformativeSelect() {
@@ -202,15 +231,18 @@
 		    });
 
 		}
-
+		/*
 		function postSSAInfo() {
-				var e = document.getElementById("stAgType");
+			 var e = document.getElementById("stAgType");
 			 var stgTypeVar = e.options[e.selectedIndex].value;
 			 var action_src = "../RA5013AT-WAR/rest/agents/running/"
 				 			 + stgTypeVar + "/"
 				 			 + document.getElementsByName("stAgName")[0].value;
 			 var SSAform = document.getElementById('form-startAgent');
 			 SSAform.action = action_src;
+
+			 setTimeout(getRunningAgents,300);
+
 			 SSAform.submit();
 			 
 			 return true;
@@ -233,19 +265,20 @@
 			 //getAgentTypes();
 			 
 		}
-		/*
-		setInterval(function () {
-		    getAgentTypes();
-		    //getRunningAgents();
-		}, 3000);
 		*/
 
 		function getAgentTypes() {
-			var select = document.getElementById("stAgType");
+			var select1 = document.getElementById("stAgType");
 			var i;
-		    for(i = select.options.length - 1 ; i >= 1 ; i--)
+		    for(i = select1.options.length - 1 ; i >= 1 ; i--)
 		    {
-		        select.remove(i);
+		        select1.remove(i);
+		    }
+		    var select2 = document.getElementById("stopType");
+			var i;
+		    for(i = select2.options.length - 1 ; i >= 1 ; i--)
+		    {
+		        select2.remove(i);
 		    }
 		    fetch('/RA5013AT-WAR/rest/agents/classes')
 		    .then(response => response.text())
@@ -254,93 +287,115 @@
 		    	var trimmedString = stringFromData.substr(2,stringFromData.length-4);
 		    	var performativeArray = trimmedString.split(',');
 		    	for(var i = 0; i < performativeArray.length; i++) {
+			    	
 		            var option = document.createElement("OPTION");
 		            var txt = document.createTextNode(performativeArray[i]);
 		            option.appendChild(txt);
-		            select.insertBefore(option, select.lastChild);
+		            select1.insertBefore(option, select1.lastChild);
+
+		            var option = document.createElement("OPTION");
+		            var txt = document.createTextNode(performativeArray[i]);
+		            option.appendChild(txt);
+		            select2.insertBefore(option, select2.lastChild);
 		        }
 		    });
 		    select.selectmenu("refresh", true);
-		    var refreshAgentTypes = 0;
 		}
-		
-		/*
-        var select = document.getElementById("performativeSelect");
-        var performativeArray = [
-            "ACCEPT_PROPOSAL",
-            "AGREE", 
-            "CANCEL", 
-            "CALL_FOR_PROPOSAL", 
-            "CONFIRM", 
-            "DISCONFIRM", 
-            "FAILURE", 
-            "INFORM", 
-            "INFORM_IF", 
-            "INFORM_REF", 
-            "NOT_UNDERSTOOD", 
-            "PROPAGATE", 
-            "PROPOSE", 
-            "PROXY", 
-            "QUERY_IF", 
-            "QUERY_REF",
-            "REFUSE", 
-            "REJECT_PROPOSAL", 
-            "REQUEST", 
-            "REQUEST_WHEN", 
-            "REQUEST_WHENEVER", 
-            "SUBSCRIBE",
-            "RESUME"
-        ];
 
-        for(var i = 0; i < performativeArray.length; i++) {
-            var option = document.createElement("OPTION");
-            var txt = document.createTextNode(performativeArray[i]);
-            option.appendChild(txt);
-            select.insertBefore(option, select.lastChild);
-        }
-		*/
+		function getRunningAgents() {
+			var select1 = document.getElementById("agSender");
+			var i;
+		    for(i = select1.options.length - 1 ; i >= 1 ; i--)
+		    {
+		        select1.remove(i);
+		    }
+		    var select2 = document.getElementById("agReceiver");
+			var i;
+		    for(i = select2.options.length - 1 ; i >= 1 ; i--)
+		    {
+		        select2.remove(i);
+		    }
 
-	    //alert(data);
-    	//var performativeArray = JSON.parse(data);	
-    			    	//var performativeArray = JSON.parse(JSON.stringify(data));
-	    	//alert(performativeArray.length);
-	    /*
-	    request.onload = function () {
-	    	var data = JSON.parse(this.response)
-			//alert(TEST!!!);
-		}
-		*/
-		
-		/*
-		var select = document.getElementById("performativeSelect");
-		$http({method: "GET", url: "/rest/messages"})
-			.success(function(data){ 
-				alert("TEST!!!");
-		  	}
-		);
-		*/
+		    fetch('/RA5013AT-WAR/rest/agents/running')
+		    .then(response => response.text())
+		    .then(data => {
+		    	var stringFromData = JSON.stringify(data);
+		    	var trimmedString = stringFromData.substr(2,stringFromData.length-4);
+		    	var performativeArray = trimmedString.split(',');
+		    	for(var i = 0; i < performativeArray.length; i++) {
+
+		            var option = document.createElement("OPTION");
+		            var txt = document.createTextNode(performativeArray[i]);
+		            option.appendChild(txt);
+		            select1.insertBefore(option, select1.lastChild);
+
+		            var option = document.createElement("OPTION");
+		            var txt = document.createTextNode(performativeArray[i]);
+		            option.appendChild(txt);
+		            select2.insertBefore(option, select2.lastChild);
+		        }
+		    });
+		    select1.selectmenu("refresh", true);
+		    select2.selectmenu("refresh", true);
 		    
-		    //xhttp.setRequestHeader("Content-type", "application/json");
-		    //xhttp.send("Your JSON Data Here");
-		    /*
-			var select = document.getElementById("performativeSelect");
-			var performativeArray = JSON.parse(data);
-        	for(var i = 0; i < performativeArray.length; i++) {
-	            var option = document.createElement("OPTION");
-	            var txt = document.createTextNode(performativeArray[i]);
-	            option.appendChild(txt);
-	            select.insertBefore(option, select.lastChild);
-	        }
-        	alert("TEST 2!!!");
-        */
-		
-	</script>
+		}
+		function createAgent() { 
+			var e = document.getElementById("CNATName");
+			 var stgTypeVar = e.options[e.selectedIndex].value;
+			 var parameter = stgTypeVar + "/"
+			 							+ document.getElementsByName("CNATModule")[0].value + "/"
+			 							+ document.getElementsByName("CNAName")[0].value;
+			 var path = "/RA5013AT-WAR/rest/agents/"
+				 			 + parameter;
+			$.ajax({
+			    type: "POST",
+			    url: path,
+			    //contentType: "text/plain".
+			    //data: parameter,
+			    success: function(msg){
+			        getAgentTypes();
+			    }
+			});
+		}
 
-		<!--
-		<div class="w-50"  align="center">
-	    	  	<button class="w-50" align="center" type="button ">Send Message</button>
-	    </div>
-		-->
+		function startAgent() {
+			 var e = document.getElementById("stAgType");
+			 var stgTypeVar = e.options[e.selectedIndex].value;
+			 var parameter = stgTypeVar + "/"
+			 							+ document.getElementsByName("stAgName")[0].value;
+			 var path = "/RA5013AT-WAR/rest/agents/running/"
+				 			 + parameter;
+			$.ajax({
+			    type: "PUT",
+			    url: path,
+			    //contentType: "text/plain".
+			    //data: parameter,
+			    success: function(msg){
+			        getRunningAgents();
+			    }
+			});
+			//alert("KRAJ!");
+		}
+		
+		function stopAgent() {
+			 var e = document.getElementById("stopType");
+			 var stgTypeVar = e.options[e.selectedIndex].value;
+			 var parameter = stgTypeVar + " - "
+ 			 							+ document.getElementsByName("stopName")[0].value;
+			 var path = "/RA5013AT-WAR/rest/agents/running/"
+				 			 + parameter;
+			$.ajax({
+			    type: "DELETE",
+			    url: path,
+			    //contentType: "text/plain".
+			    //data: parameter,
+			    success: function(msg){
+			        getRunningAgents();
+			    }
+			});
+			//alert("KRAJ!");
+		}
+	</script>
 	
 </body>
 </html>

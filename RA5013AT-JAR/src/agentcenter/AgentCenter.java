@@ -20,4 +20,8 @@ public interface AgentCenter {
 	
 	public String[] getAgentTypes();
 
+	public String[] getRunningAgents();
+
+	public void stopServerAgent(AID aid);
+
 }

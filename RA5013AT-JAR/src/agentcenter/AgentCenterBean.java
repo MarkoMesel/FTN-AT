@@ -153,4 +153,33 @@ public class AgentCenterBean implements AgentCenter {
 		
 		return agentTypes.toArray(new String[0]);
 	}
+	@Override
+	public String[] getRunningAgents() {
+		ArrayList<String> runningAgents = new ArrayList<String>();
+		Iterator it = agents.entrySet().iterator();
+		while (it.hasNext()) {
+	        Map.Entry pair = (Map.Entry)it.next();
+	        Agent a = (Agent) pair.getKey();
+	        AID aid = a.getAid();
+	        Boolean running = (Boolean) pair.getValue();
+	        if(running) {
+	        	String result = aid.getName() + " - " 
+	        						   + aid.getType().getName() + " - "
+	        						   + aid.getType().getModule();
+	        	runningAgents.add(result);
+	        }
+		}
+		
+		return runningAgents.toArray(new String[0]);
+	}
+	@Override
+	public void stopServerAgent(AID aid) {
+		Agent agent = findAgent(aid);
+		if(agent != null) {
+			if(agents.get(agent)) {
+				agents.replace(agent,false);
+				System.out.println("Uspesno je prekinut agent: " + aid.getName());
+			}
+		}
+	}
 }

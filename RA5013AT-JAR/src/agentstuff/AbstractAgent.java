@@ -11,12 +11,16 @@ import java.util.concurrent.TimeUnit;
 @StatefulTimeout(unit = TimeUnit.MINUTES, value = 20)
 public abstract class AbstractAgent implements Agent {
 	
-	protected AID id;
-
+	protected AID aid;
+	
 	@Override
 	public void handleMessage(ACLMessage msg) {
-		// TODO Auto-generated method stub
 		
+	}
+
+	@Override
+	public AID getAid() {
+		return aid;
 	}
 	
 	

@@ -1,11 +1,9 @@
 package agentstuff;
 
-import agentcenter.AgentCenterBean;
-
 public class AID {
 	
 	private String name;
-	private AgentCenterBean host;
+	private String hostName;
 	private AgentType type;
 	
 	public String getName() {
@@ -14,11 +12,11 @@ public class AID {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public AgentCenterBean getHost() {
-		return host;
+	public String getHost() {
+		return hostName;
 	}
-	public void setHost(AgentCenterBean host) {
-		this.host = host;
+	public void setHost(String hostName) {
+		this.hostName = hostName;
 	}
 	public AgentType getType() {
 		return type;

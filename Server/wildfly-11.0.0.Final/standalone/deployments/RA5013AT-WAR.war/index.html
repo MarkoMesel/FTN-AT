@@ -20,23 +20,96 @@
 
 </head>
 <body>
-
-	<!-- 
-	<div ng-controller="angCtrl">
-        <table border="1">
-            <tr>
-                <td>Book Name</td>
-                <td ng-bind="book"></td>
-            </tr>
-            <tr>
-                <td>Author</td>
-                <td ng-bind="author"></td>
-            </tr>
-        </table>
-    </div>
-    -->
     <h1 class="pb-4" align="center" ><strong>Klijentska Aplikacija</strong></h1>
+	
+		<form id="form-createNewAgent" method="POST" enctype="text/plain" onSubmit="return postCNAInfo()">
+    	<div class="container border">
+	    <div class="row form-inline" >
+		    <div class="col border" align="center">
+		    	<h3 class="" ><strong>Create New Agent</strong></h3>
+		    </div>
+	    </div>
+	    <div class="row">
+		    <div class="col border">
+		    	<div class="col form-inline">
+			    	<div class="col-6">
+			    		<span class="">Agent Type - Name: </span>
+			    	</div>			    	
+			    	<div class="col">
+			    		<select id="CNATName" style="width:100%">
+			            	<option value="ping">Ping</option>
+			            	<option value="pong">Pong</option>
+			            </select>
+			    	</div>
+			    </div>
+			    <div class="col form-inline">
+			    	<div class="col-6">
+			    		<span class="">Agent Type - Module: </span>
+			    	</div>
+			    	<div class="col">
+			    		<input name="CNATModule" style="width:100%"></input>
+			    	</div>
+			   	</div>
+		    	<div class="col form-inline">
+			    	<div class="col-6">
+			    		<span class="">Agent Name: </span>
+			    	</div>
+			    	<div class="col">
+			    		<input name="CNAName" style="width:100%"></input>
+			    	</div>
+			   	</div>
+	    	</div>
 
+	    </div>
+	    <div class="row form-inline">
+	    	<div class="col border" align="center">
+	    		<input id="createAgentBtn" name="CNABtn" type="submit" value="Create Agent"></input>
+	    	</div>
+	    </div>
+    </div>
+    </form>
+    </br>
+    </br>
+	<form id="form-startAgent" method="POST" enctype="text/plain" onSubmit="return postSSAInfo()">
+    	<div class="container border">
+	    <div class="row form-inline" >
+		    <div class="col border" align="center">
+		    	<h3 class="" ><strong>Start Server Agent</strong></h3>
+		    </div>
+	    </div>
+	    <div class="row">
+		    <div class="col border">
+		    	<div class="col form-inline">
+			    	<div class="col-6">
+			    		<span class="">Agent Type (nam - mod): </span>
+			    	</div>
+			    	
+			    	<div class="col">
+			    		<select id="stAgType" style="width:100%">
+			            	<option value="">-</option>
+			            </select>
+			    	</div>
+			    </div>
+		    	<div class="col form-inline">
+			    	<div class="col-6">
+			    		<span class="">Agent Name: </span>
+			    	</div>
+			    	<div class="col">
+			    		<input name="stAgName" style="width:100%"></input>
+			    	</div>
+			   	</div>
+	    	</div>
+
+	    </div>
+	    <div class="row form-inline">
+	    	<div class="col border" align="center">
+	    		<input id="startAgentBtn" name="SSABtn" type="submit" value="Start Agent"></input>
+	    	</div>
+	    </div>
+    </div>
+    </form>
+    </br>
+    </br>
 	<div class="container border">
 	    <div class="row form-inline" >
 		    <div class="col border" align="center">
@@ -93,13 +166,104 @@
 	    	<div class="col border" align="center">
 	    		<button class="" type="button ">Send Message</button>
 	    	</div>
+	    	<!--
 	    	<div class="col border" align="center">
 	    		<button class="" type="button " onclick="populatePerformativeSelect();">POPULATE PERFORMATIVE COMBOBOX</button>
 	    	</div>
+	    	-->
 	    </div>
     </div>
 
     <script>
+
+    	var refreshAgentTypes = 1;
+    	var refreshRunningAgents = 1;
+	
+    	window.onload = function() {
+    		populatePerformativeSelect();
+    	};
+
+		function populatePerformativeSelect() {
+			
+			var select = document.getElementById("performativeSelect");
+		    
+		    fetch('/RA5013AT-WAR/rest/messages')
+		    .then(response => response.text())
+		    .then(data => {
+		    	var stringFromData = JSON.stringify(data);
+		    	var trimmedString = stringFromData.substr(2,stringFromData.length-4);
+		    	var performativeArray = trimmedString.split(',');
+		    	for(var i = 0; i < performativeArray.length; i++) {
+		            var option = document.createElement("OPTION");
+		            var txt = document.createTextNode(performativeArray[i]);
+		            option.appendChild(txt);
+		            select.insertBefore(option, select.lastChild);
+		        }
+		    });
+
+		}
+
+		function postSSAInfo() {
+				var e = document.getElementById("stAgType");
+			 var stgTypeVar = e.options[e.selectedIndex].value;
+			 var action_src = "../RA5013AT-WAR/rest/agents/running/"
+				 			 + stgTypeVar + "/"
+				 			 + document.getElementsByName("stAgName")[0].value;
+			 var SSAform = document.getElementById('form-startAgent');
+			 SSAform.action = action_src;
+			 SSAform.submit();
+			 
+			 return true;
+		}
+
+		function postCNAInfo() {
+			 var e = document.getElementById("CNATName");
+			 var typeNameVar = e.options[e.selectedIndex].value;
+			 var action_src2 = "../RA5013AT-WAR/rest/agents/"
+				 			 + typeNameVar + "/"
+				 			 + document.getElementsByName("CNATModule")[0].value + "/"
+				 			 + document.getElementsByName("CNAName")[0].value;
+			 var CNAform = document.getElementById('form-createNewAgent');
+			 CNAform.action = action_src2;
+			
+			 setTimeout(getAgentTypes,300);
+			 
+			 CNAform.submit();
+
+			 //getAgentTypes();
+			 
+		}
+		/*
+		setInterval(function () {
+		    getAgentTypes();
+		    //getRunningAgents();
+		}, 3000);
+		*/
+
+		function getAgentTypes() {
+			var select = document.getElementById("stAgType");
+			var i;
+		    for(i = select.options.length - 1 ; i >= 1 ; i--)
+		    {
+		        select.remove(i);
+		    }
+		    fetch('/RA5013AT-WAR/rest/agents/classes')
+		    .then(response => response.text())
+		    .then(data => {
+		    	var stringFromData = JSON.stringify(data);
+		    	var trimmedString = stringFromData.substr(2,stringFromData.length-4);
+		    	var performativeArray = trimmedString.split(',');
+		    	for(var i = 0; i < performativeArray.length; i++) {
+		            var option = document.createElement("OPTION");
+		            var txt = document.createTextNode(performativeArray[i]);
+		            option.appendChild(txt);
+		            select.insertBefore(option, select.lastChild);
+		        }
+		    });
+		    select.selectmenu("refresh", true);
+		    var refreshAgentTypes = 0;
+		}
+		
 		/*
         var select = document.getElementById("performativeSelect");
         var performativeArray = [
@@ -136,43 +300,25 @@
         }
 		*/
 
-		function populatePerformativeSelect() {
-			/*
-			var select = document.getElementById("performativeSelect");
-			$http({method: "GET", url: "/rest/messages"})
-				.success(function(data){ 
-					alert("TEST!!!");
-			  	}
-			);
-			*/
-			var select = document.getElementById("performativeSelect");
-		    
-		    fetch('/RA5013AT-WAR/rest/messages')
-		    .then(response => response.text())
-		    .then(data => {
-		    	var stringFromData = JSON.stringify(data);
-		    	var trimmedString = stringFromData.substr(2,stringFromData.length-4);
-		    	var performativeArray = trimmedString.split(',');
-		    	for(var i = 0; i < performativeArray.length; i++) {
-		            var option = document.createElement("OPTION");
-		            var txt = document.createTextNode(performativeArray[i]);
-		            option.appendChild(txt);
-		            select.insertBefore(option, select.lastChild);
-		        }
-		    });
-
-		    //alert(data);
-	    	//var performativeArray = JSON.parse(data);	
-	    			    	//var performativeArray = JSON.parse(JSON.stringify(data));
-		    	//alert(performativeArray.length);
-		    /*
-		    request.onload = function () {
-		    	var data = JSON.parse(this.response)
-				//alert(TEST!!!);
-			}
-			*/
+	    //alert(data);
+    	//var performativeArray = JSON.parse(data);	
+    			    	//var performativeArray = JSON.parse(JSON.stringify(data));
+	    	//alert(performativeArray.length);
+	    /*
+	    request.onload = function () {
+	    	var data = JSON.parse(this.response)
+			//alert(TEST!!!);
 		}
-			
+		*/
+		
+		/*
+		var select = document.getElementById("performativeSelect");
+		$http({method: "GET", url: "/rest/messages"})
+			.success(function(data){ 
+				alert("TEST!!!");
+		  	}
+		);
+		*/
 		    
 		    //xhttp.setRequestHeader("Content-type", "application/json");
 		    //xhttp.send("Your JSON Data Here");
@@ -186,15 +332,15 @@
 	            select.insertBefore(option, select.lastChild);
 	        }
         	alert("TEST 2!!!");
-        	*/
-			
-    </script>
+        */
+		
+	</script>
 
-<!--
-	<div class="w-50"  align="center">
-    	  	<button class="w-50" align="center" type="button ">Send Message</button>
-    </div>
--->
+		<!--
+		<div class="w-50"  align="center">
+	    	  	<button class="w-50" align="center" type="button ">Send Message</button>
+	    </div>
+		-->
 	
 </body>
 </html>

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="agentcenter.AgentCenterBean"/>
-<fullyQualifiedTypeName name="agentstuff.AID"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="javax.websocket.Session"/>
 <fullyQualifiedTypeName name="javax.enterprise.context.ApplicationScoped"/>
 <fullyQualifiedTypeName name="javax.websocket.server.ServerEndpoint"/>
@@ -15,7 +13,6 @@
 <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
 <fullyQualifiedTypeName name="javax.ws.rs.ApplicationPath"/>
 <fullyQualifiedTypeName name="javax.ws.rs.core.Application"/>
-<fullyQualifiedTypeName name="javax.ws.rs.PathParam"/>
 <fullyQualifiedTypeName name="javax.ws.rs.core.Response"/>
 <fullyQualifiedTypeName name="javax.ws.rs.core.Response.Status"/>
 <fullyQualifiedTypeName name="messagestuff.Performative"/>
@@ -23,4 +20,25 @@
 <fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="javax.ws.rs.Consumes"/>
+<fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
+<fullyQualifiedTypeName name="javax.ejb.Local"/>
+<fullyQualifiedTypeName name="javax.ws.rs.PUT"/>
+<fullyQualifiedTypeName name="javax.ws.rs.PathParam"/>
+<fullyQualifiedTypeName name="agentstuff.AgentType"/>
+<fullyQualifiedTypeName name="javax.ws.rs.POST"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="agentcenter.AgentCenter"/>
+<fullyQualifiedTypeName name="agentstuff.AID"/>
+<fullyQualifiedTypeName name="javax.persistence.Cache"/>
+<fullyQualifiedTypeName name="com.sun.beans.util.Cache"/>
+<fullyQualifiedTypeName name="agentstuff.AbstractAgent"/>
+<fullyQualifiedTypeName name="pingpongstuff.Ping"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="agentstuff.Agent"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="pingpongstuff.Pong"/>
+<fullyQualifiedTypeName name="javax.ejb.Singleton"/>
+<fullyQualifiedTypeName name="javax.ejb.EJB"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
 </qualifiedTypeNameHistroy>

@@ -24,4 +24,9 @@ public class AID {
 	public void setType(AgentType type) {
 		this.type = type;
 	}
+	public String getStr() {
+		return name + " - " 
+					+ type.getName() + " - "
+					+ type.getModule();
+	}
 }

@@ -10,6 +10,10 @@ import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import agentstuff.AgentType;
 import messagestuff.Performative;
@@ -22,7 +26,6 @@ public interface RestTest {
 	@Produces("text/plain")
 	public String getPerformativesList();
 	
-	//TODO: implementiraj PUT umesto POST
 	@PUT
 	@Path("/agents/running/{type}/{name}")
 	@Consumes("text/plain")
@@ -56,4 +59,12 @@ public interface RestTest {
 	@Consumes("text/plain")
 	@Produces("text/plain")
 	public void stopAgent(@PathParam("aid") String aid);
+	
+	@POST
+	@Path("/messages")
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	public void sendACLMessage(String data);
+	
+	
 }

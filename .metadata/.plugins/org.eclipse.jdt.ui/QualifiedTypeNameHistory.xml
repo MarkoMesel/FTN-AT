@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="agentcenter.AgentCenterBean"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="javax.websocket.Session"/>
-<fullyQualifiedTypeName name="javax.enterprise.context.ApplicationScoped"/>
-<fullyQualifiedTypeName name="javax.websocket.server.ServerEndpoint"/>
-<fullyQualifiedTypeName name="javax.websocket.OnOpen"/>
 <fullyQualifiedTypeName name="javax.websocket.OnClose"/>
 <fullyQualifiedTypeName name="javax.websocket.OnMessage"/>
 <fullyQualifiedTypeName name="javax.websocket.OnError"/>
@@ -15,7 +9,6 @@
 <fullyQualifiedTypeName name="javax.ws.rs.core.Application"/>
 <fullyQualifiedTypeName name="javax.ws.rs.core.Response"/>
 <fullyQualifiedTypeName name="javax.ws.rs.core.Response.Status"/>
-<fullyQualifiedTypeName name="messagestuff.Performative"/>
 <fullyQualifiedTypeName name="javax.ws.rs.Produces"/>
 <fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
@@ -37,9 +30,34 @@
 <fullyQualifiedTypeName name="agentstuff.Agent"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="pingpongstuff.Pong"/>
-<fullyQualifiedTypeName name="javax.ejb.Singleton"/>
-<fullyQualifiedTypeName name="javax.ejb.EJB"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
 <fullyQualifiedTypeName name="javax.ws.rs.DELETE"/>
+<fullyQualifiedTypeName name="jmstest.Sender"/>
+<fullyQualifiedTypeName name="jmstest.Receiver"/>
+<fullyQualifiedTypeName name="jmstest.AsyncReceiver"/>
+<fullyQualifiedTypeName name="jmstest.Browser"/>
+<fullyQualifiedTypeName name="messagestuff.Performative"/>
+<fullyQualifiedTypeName name="jmstest.MessageManager"/>
+<fullyQualifiedTypeName name="messagestuff.ACLMessage"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="javax.naming.Context"/>
+<fullyQualifiedTypeName name="javax.naming.InitialContext"/>
+<fullyQualifiedTypeName name="javax.jms.Queue"/>
+<fullyQualifiedTypeName name="javax.jms.ConnectionFactory"/>
+<fullyQualifiedTypeName name="javax.jms.Connection"/>
+<fullyQualifiedTypeName name="javax.jms.Session"/>
+<fullyQualifiedTypeName name="javax.jms.MessageProducer"/>
+<fullyQualifiedTypeName name="javax.jms.TextMessage"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="javax.jms.JMSContext"/>
+<fullyQualifiedTypeName name="javax.jms.Destination"/>
+<fullyQualifiedTypeName name="javax.jms.JMSProducer"/>
+<fullyQualifiedTypeName name="jmstest.SendMessage"/>
+<fullyQualifiedTypeName name="javax.ejb.Remote"/>
+<fullyQualifiedTypeName name="jmstest.SendMessageInterface"/>
+<fullyQualifiedTypeName name="javax.ejb.EJB"/>
+<fullyQualifiedTypeName name="javax.ejb.Singleton"/>
+<fullyQualifiedTypeName name="javax.annotation.PreDestroy"/>
+<fullyQualifiedTypeName name="javax.annotation.Resource"/>
 </qualifiedTypeNameHistroy>

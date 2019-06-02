@@ -188,14 +188,14 @@
 			    		<span class="">Content: </span>
 			    	</div>
 			    	<div class="col">
-			    		<input style="width:100%" />
+			    		<input name="messageContent" style="width:100%" />
 			    	</div>
 			    </div>
 	    	</div>
 	    </div>
 	    <div class="row form-inline">
 	    	<div class="col border" align="center">
-	    		<button class="" type="button ">Send Message</button>
+	    		<button id="sendMessageBtn" name="SMBtn" onclick="sendMessageToServer()">Send Message</button>
 	    	</div>
 	    	<!--
 	    	<div class="col border" align="center">
@@ -231,41 +231,6 @@
 		    });
 
 		}
-		/*
-		function postSSAInfo() {
-			 var e = document.getElementById("stAgType");
-			 var stgTypeVar = e.options[e.selectedIndex].value;
-			 var action_src = "../RA5013AT-WAR/rest/agents/running/"
-				 			 + stgTypeVar + "/"
-				 			 + document.getElementsByName("stAgName")[0].value;
-			 var SSAform = document.getElementById('form-startAgent');
-			 SSAform.action = action_src;
-
-			 setTimeout(getRunningAgents,300);
-
-			 SSAform.submit();
-			 
-			 return true;
-		}
-
-		function postCNAInfo() {
-			 var e = document.getElementById("CNATName");
-			 var typeNameVar = e.options[e.selectedIndex].value;
-			 var action_src2 = "../RA5013AT-WAR/rest/agents/"
-				 			 + typeNameVar + "/"
-				 			 + document.getElementsByName("CNATModule")[0].value + "/"
-				 			 + document.getElementsByName("CNAName")[0].value;
-			 var CNAform = document.getElementById('form-createNewAgent');
-			 CNAform.action = action_src2;
-			
-			 setTimeout(getAgentTypes,300);
-			 
-			 CNAform.submit();
-
-			 //getAgentTypes();
-			 
-		}
-		*/
 
 		function getAgentTypes() {
 			var select1 = document.getElementById("stAgType");
@@ -394,6 +359,33 @@
 			    }
 			});
 			//alert("KRAJ!");
+		}
+
+		function sendMessageToServer() {
+			var e = document.getElementById("agSender");
+			var sender = e.options[e.selectedIndex].value;
+			e = document.getElementById("agReceiver");
+			var receiver = e.options[e.selectedIndex].value;
+			e = document.getElementById("performativeSelect");
+			var performative = e.options[e.selectedIndex].value;
+			var message = document.getElementsByName("messageContent")[0].value;
+
+			var dataToSend = [sender, receiver, performative, message];
+			var dataToSendJSON = JSON.stringify(dataToSend);
+
+			//alert(dataToSendJSON);
+			
+			var path = "/RA5013AT-WAR/rest/messages";
+
+			$.ajax({
+			    url: path,
+			    type: 'POST',
+			    contentType: 'application/json',
+			    data: dataToSendJSON,
+			    success: function(msg){
+		        //alert("USPELO JE!");
+		    }
+			});
 		}
 	</script>
 	

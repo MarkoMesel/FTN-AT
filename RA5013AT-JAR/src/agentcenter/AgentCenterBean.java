@@ -1,7 +1,6 @@
 package agentcenter;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -9,16 +8,13 @@ import java.util.Map;
 import javax.ejb.EJB;
 import javax.ejb.Local;
 import javax.ejb.LocalBean;
-import javax.ejb.Remote;
 import javax.ejb.Singleton;
 import javax.ejb.Stateless;
 
-import com.sun.beans.util.Cache;
-
-import agentstuff.AgentType;
 import agentstuff.AID;
 import agentstuff.Agent;
-import messagestuff.Performative;
+import jmstest.SendMessage;
+import messagestuff.ACLMessage;
 import pingpongstuff.Ping;
 import pingpongstuff.Pong;
 
@@ -32,6 +28,9 @@ public class AgentCenterBean implements AgentCenter {
 	
 	public	HashMap<Agent, Boolean> agents = new HashMap<Agent, Boolean>();
 	//private HashMap<AID, Agent> runningAgents = new HashMap<AID, Agent>();
+	
+	@EJB
+	private SendMessage sm;
 	
 	@Override
 	public String getAlias() {
@@ -181,5 +180,10 @@ public class AgentCenterBean implements AgentCenter {
 				System.out.println("Uspesno je prekinut agent: " + aid.getName());
 			}
 		}
+	}
+	@Override
+	public void fireMessage(String msg) {
+		System.out.println("JAVLJAM SE IZ AgentCenterBean.fireMessage()");
+		sm.reciNesto();
 	}
 }

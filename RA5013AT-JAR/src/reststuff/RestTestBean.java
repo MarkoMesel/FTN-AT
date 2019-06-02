@@ -1,7 +1,9 @@
 package reststuff;
 
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import javax.ejb.EJB;
 import javax.ejb.LocalBean;
@@ -12,9 +14,15 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import agentcenter.AgentCenter;
 import agentstuff.AID;
 import agentstuff.AgentType;
+import jmstest.SendMessage;
+import messagestuff.ACLMessage;
 import messagestuff.Performative;
 
 @Stateless
@@ -26,10 +34,14 @@ public class RestTestBean implements RestTest {
 	@EJB
 	AgentCenter agc;
 	
+	//@EJB
+	//SendMessageInterface sm;
+	
 	@Override
 	public String getPerformativesList() {
 		System.out.println("JAVLJAM SE IZ JAR-A : RestTest !");
 		agc.reciNesto();
+		//sm.init();
 		return Arrays.toString(Performative.getPerformativesStringArray());
 	}
 
@@ -90,6 +102,31 @@ public class RestTestBean implements RestTest {
 		aid.setHost(agc.getAlias());
 		aid.setType(at);
 		agc.stopServerAgent(aid);
+	}
+
+	@Override
+	public void sendACLMessage(String data) {
+		/*
+		try {
+			JSONArray dataJSON = new JSONArray(data);
+			System.out.println("USPELA JE KONVERZIJA!");
+			List<String> list = new ArrayList<String>();
+			for(int i = 0; i < dataJSON.length(); i++){
+				list.add(dataJSON.getString(i));
+				System.out.println("USPELO JE: " + dataJSON.getString(i));
+				agc.handleMessage(new ACLMessage());
+			}
+		} catch (JSONException e) {
+			System.out.println("NIJE USPELO");
+		} 
+		*/
+		//agc.fireMessage("abc");
+		//sm = new SendMessage();
+		//sm.init();
+		//sm.init();
+		//SendMessage sm = new SendMessage();
+		//sm.init();
+		agc.fireMessage(data);
 	}
 	
 }

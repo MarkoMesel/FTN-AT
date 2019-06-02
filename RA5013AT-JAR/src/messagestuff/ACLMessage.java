@@ -1,16 +1,17 @@
 package messagestuff;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.List;
 
 import agentstuff.AID;
 
-public class ACLMessage {
-	public Performative performative;
+public class ACLMessage implements Serializable {
 	public AID sender;
 	public List<AID> receivers;
-	public AID replyTo;
+	public Performative performative;
 	public String content;
+	public AID replyTo;
 	public Object contentObj;
 	public HashMap<String, Object> userArgs;
 	public String language;

@@ -3,6 +3,7 @@ package agentcenter;
 import agentstuff.AID;
 import agentstuff.Agent;
 import agentstuff.AgentType;
+import messagestuff.ACLMessage;
 
 public interface AgentCenter {
 
@@ -23,5 +24,7 @@ public interface AgentCenter {
 	public String[] getRunningAgents();
 
 	public void stopServerAgent(AID aid);
+
+	public void fireMessage(String msg);
 
 }

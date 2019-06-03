@@ -14,6 +14,7 @@ import javax.jms.JMSContext;
 import javax.jms.JMSException;
 import javax.jms.JMSProducer;
 import javax.jms.MessageProducer;
+import javax.jms.ObjectMessage;
 import javax.jms.Queue;
 import javax.jms.QueueConnection;
 import javax.jms.Session;
@@ -26,6 +27,8 @@ import javax.annotation.PreDestroy;
 import javax.annotation.Resource;
 
 import agentcenter.AgentCenter;
+import agentstuff.AID;
+import messagestuff.ACLMessage;
 
 @Singleton
 @LocalBean
@@ -34,9 +37,11 @@ public class SendMessage {
 	private Connection connection;
 	@Resource(lookup = "java:jboss/exported/jms/RemoteConnectionFactory")
 	private ConnectionFactory cf;
-	@Resource(lookup = "java:jboss/exported/jms/testQueue")
-	
+	@Resource(lookup = "java:jboss/exported/jms/testQueue")	
 	private Queue queue;
+	
+	Session session;
+	MessageProducer messageProducer;
 	
 	@PostConstruct
 	public void init() {
@@ -67,14 +72,17 @@ public class SendMessage {
 			System.out.println("k9");
 			connection = cf.createConnection("testuser","testuser");
 			
+			
 			System.out.println("k10");
-			Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+			session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 			System.out.println("k11");
-			MessageProducer messageProducer = session.createProducer(queue);
-			System.out.println("k12");
+			messageProducer = session.createProducer(queue);
+
+			/*
 			TextMessage message = session.createTextMessage("Hello World. The time is now " + new Date());
 			System.out.println("k13");
 			messageProducer.send(message);
+			*/
 			
 			System.out.println("RADI!!!");
 			
@@ -83,12 +91,15 @@ public class SendMessage {
 		} catch (JMSException e) {
 			e.printStackTrace();
 		}
-		finally {
-			try {
-				connection.close();
-			} catch (JMSException e) {
-				
-			}
+	}
+	
+	public void sendMessage(ACLMessage aclMsg) {
+		try {
+			ObjectMessage objMsg = session.createObjectMessage(aclMsg);
+			messageProducer.send(objMsg);
+		} catch (JMSException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 	
@@ -100,6 +111,7 @@ public class SendMessage {
 	public void closeConnection() {
 		try {
 			connection.close();
+			System.out.println("KONEKCIJA JE ZATVORENA!");
 		} catch (JMSException e) {
 				
 		}

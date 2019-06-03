@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.websocket.OnClose"/>
-<fullyQualifiedTypeName name="javax.websocket.OnMessage"/>
-<fullyQualifiedTypeName name="javax.websocket.OnError"/>
-<fullyQualifiedTypeName name="java.util.stream.Stream"/>
-<fullyQualifiedTypeName name="java.util.stream.Collectors"/>
-<fullyQualifiedTypeName name="javax.ws.rs.ApplicationPath"/>
-<fullyQualifiedTypeName name="javax.ws.rs.core.Application"/>
 <fullyQualifiedTypeName name="javax.ws.rs.core.Response"/>
 <fullyQualifiedTypeName name="javax.ws.rs.core.Response.Status"/>
 <fullyQualifiedTypeName name="javax.ws.rs.Produces"/>
@@ -21,7 +14,6 @@
 <fullyQualifiedTypeName name="javax.ws.rs.POST"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="agentcenter.AgentCenter"/>
-<fullyQualifiedTypeName name="agentstuff.AID"/>
 <fullyQualifiedTypeName name="javax.persistence.Cache"/>
 <fullyQualifiedTypeName name="com.sun.beans.util.Cache"/>
 <fullyQualifiedTypeName name="agentstuff.AbstractAgent"/>
@@ -30,16 +22,13 @@
 <fullyQualifiedTypeName name="agentstuff.Agent"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="pingpongstuff.Pong"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
 <fullyQualifiedTypeName name="javax.ws.rs.DELETE"/>
 <fullyQualifiedTypeName name="jmstest.Sender"/>
 <fullyQualifiedTypeName name="jmstest.Receiver"/>
 <fullyQualifiedTypeName name="jmstest.AsyncReceiver"/>
 <fullyQualifiedTypeName name="jmstest.Browser"/>
-<fullyQualifiedTypeName name="messagestuff.Performative"/>
 <fullyQualifiedTypeName name="jmstest.MessageManager"/>
-<fullyQualifiedTypeName name="messagestuff.ACLMessage"/>
 <fullyQualifiedTypeName name="java.util.Properties"/>
 <fullyQualifiedTypeName name="javax.naming.Context"/>
 <fullyQualifiedTypeName name="javax.naming.InitialContext"/>
@@ -56,8 +45,19 @@
 <fullyQualifiedTypeName name="jmstest.SendMessage"/>
 <fullyQualifiedTypeName name="javax.ejb.Remote"/>
 <fullyQualifiedTypeName name="jmstest.SendMessageInterface"/>
-<fullyQualifiedTypeName name="javax.ejb.EJB"/>
 <fullyQualifiedTypeName name="javax.ejb.Singleton"/>
 <fullyQualifiedTypeName name="javax.annotation.PreDestroy"/>
 <fullyQualifiedTypeName name="javax.annotation.Resource"/>
+<fullyQualifiedTypeName name="javax.jms.MessageListener"/>
+<fullyQualifiedTypeName name="javax.jms.ObjectMessage"/>
+<fullyQualifiedTypeName name="org.json.JSONArray"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.json.JSONException"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="javax.ejb.EJB"/>
+<fullyQualifiedTypeName name="agentcenter.AgentCenterBean"/>
+<fullyQualifiedTypeName name="messagestuff.ACLMessage"/>
+<fullyQualifiedTypeName name="agentstuff.AID"/>
+<fullyQualifiedTypeName name="messagestuff.Performative"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
 </qualifiedTypeNameHistroy>

@@ -106,27 +106,7 @@ public class RestTestBean implements RestTest {
 
 	@Override
 	public void sendACLMessage(String data) {
-		/*
-		try {
-			JSONArray dataJSON = new JSONArray(data);
-			System.out.println("USPELA JE KONVERZIJA!");
-			List<String> list = new ArrayList<String>();
-			for(int i = 0; i < dataJSON.length(); i++){
-				list.add(dataJSON.getString(i));
-				System.out.println("USPELO JE: " + dataJSON.getString(i));
-				agc.handleMessage(new ACLMessage());
-			}
-		} catch (JSONException e) {
-			System.out.println("NIJE USPELO");
-		} 
-		*/
-		//agc.fireMessage("abc");
-		//sm = new SendMessage();
-		//sm.init();
-		//sm.init();
-		//SendMessage sm = new SendMessage();
-		//sm.init();
-		agc.fireMessage(data);
+		agc.formMessage(data);
 	}
 	
 }

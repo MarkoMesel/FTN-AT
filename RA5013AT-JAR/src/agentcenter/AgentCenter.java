@@ -25,6 +25,6 @@ public interface AgentCenter {
 
 	public void stopServerAgent(AID aid);
 
-	public void fireMessage(String msg);
+	public void formMessage(String data);
 
 }

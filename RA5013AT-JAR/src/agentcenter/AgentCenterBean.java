@@ -3,6 +3,7 @@ package agentcenter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 import javax.ejb.EJB;
@@ -11,10 +12,14 @@ import javax.ejb.LocalBean;
 import javax.ejb.Singleton;
 import javax.ejb.Stateless;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+
 import agentstuff.AID;
 import agentstuff.Agent;
 import jmstest.SendMessage;
 import messagestuff.ACLMessage;
+import messagestuff.Performative;
 import pingpongstuff.Ping;
 import pingpongstuff.Pong;
 
@@ -182,8 +187,38 @@ public class AgentCenterBean implements AgentCenter {
 		}
 	}
 	@Override
-	public void fireMessage(String msg) {
-		System.out.println("JAVLJAM SE IZ AgentCenterBean.fireMessage()");
-		sm.reciNesto();
+	public void formMessage(String data) {
+		List<String> list = null;
+		try {
+			JSONArray dataJSON = new JSONArray(data);
+			System.out.println("USPELA JE KONVERZIJA!");
+			list = new ArrayList<String>();
+			for(int i = 0; i < dataJSON.length(); i++){
+				list.add(dataJSON.getString(i));
+				//System.out.println(dataJSON.getString(i));
+			}
+		} catch (JSONException e) {
+			System.out.println("NIJE USPELO");
+		}
+		
+		if(list.size() == 4) {
+			System.out.println("Sender: " + list.get(0));
+			System.out.println("Receiver: " + list.get(1));
+			System.out.println("Performative: " + list.get(2));
+			System.out.println("Content: " + list.get(3));
+			
+			AID senderAid = new AID();
+			senderAid.formFromString(list.get(0));
+			AID receiverAid = new AID();
+			receiverAid.formFromString(list.get(1));
+			Performative performative = Performative.valueOf(list.get(2));
+			String content = list.get(3);
+			ACLMessage aclMsg = new ACLMessage(senderAid,
+											   receiverAid,
+											   performative,
+											   content);
+			sm.sendMessage(aclMsg);
+		}
+		//sm.reciNesto();
 	}
 }

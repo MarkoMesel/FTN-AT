@@ -24,7 +24,8 @@ public class Pong extends AbstractAgent {
 	
 	@Override
 	public void handleMessage(ACLMessage msg) {
-
+		System.out.println("JAVLJAM SE IZ AGENTA!");
+		System.out.println("moj AID je: " + aid.getStr());
 	}
 
 	

@@ -1,5 +1,6 @@
 package agentstuff;
 
+import jmstest.MDBConsumer;
 import messagestuff.ACLMessage;
 
 public interface Agent {
@@ -9,5 +10,7 @@ public interface Agent {
 	void handleMessage(ACLMessage msg);
 	
 	AID getAid();
+
+	void setConsumer(MDBConsumer consumer);
 
 }

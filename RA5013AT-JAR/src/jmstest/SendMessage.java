@@ -115,5 +115,6 @@ public class SendMessage {
 		} catch (JMSException e) {
 				
 		}
-	}	
+	}
+
 }

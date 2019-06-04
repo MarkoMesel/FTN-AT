@@ -29,13 +29,13 @@ import pingpongstuff.Pong;
 public class AgentCenterBean implements AgentCenter {
 	
 	private String alias = "acb";
-	private String address = "moj.program.stagod";
+	private String address = "moj.program.neznam";
 	
 	public	HashMap<Agent, Boolean> agents = new HashMap<Agent, Boolean>();
 	//private HashMap<AID, Agent> runningAgents = new HashMap<AID, Agent>();
 	
 	@EJB
-	private SendMessage sm;
+	SendMessage sm;
 	
 	@Override
 	public String getAlias() {
@@ -220,5 +220,13 @@ public class AgentCenterBean implements AgentCenter {
 			sm.sendMessage(aclMsg);
 		}
 		//sm.reciNesto();
+	}
+	@Override
+	public SendMessage getSM() {
+		return sm;
+	}
+	@Override
+	public void forwardToSM(ACLMessage aclMsg) {
+		sm.sendMessage(aclMsg);
 	}
 }

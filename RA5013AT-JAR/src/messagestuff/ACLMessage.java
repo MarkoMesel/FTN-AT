@@ -18,6 +18,12 @@ public class ACLMessage implements Serializable {
 		this.content = content;
 	}
 	
+	public ACLMessage(Performative performative) {
+		receivers = new ArrayList<>();
+		userArgs = new HashMap<String, Object>();
+		this.performative = performative;	
+	}
+	
 	public AID sender;
 	public List<AID> receivers;
 	public Performative performative;
@@ -33,5 +39,22 @@ public class ACLMessage implements Serializable {
 	public String replyWith;
 	public String inReplyTo;
 	public Long replyBy;
+	
+	public ACLMessage makeReply(Performative performative) {
+		ACLMessage reply = null;
+		if(sender != null || replyTo != null) {
+			reply = new ACLMessage(performative);
+			reply.receivers.add(replyTo != null ? replyTo : sender);
+			reply.language = language;
+			reply.ontology = ontology;
+			reply.encoding = encoding;
+			reply.protocol = protocol;
+			reply.conversationId = conversationId;
+			
+			reply.inReplyTo = replyWith;
+			return reply;
+		}
+		return reply;
+	}
 	
 }

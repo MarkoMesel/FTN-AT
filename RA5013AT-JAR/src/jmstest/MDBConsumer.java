@@ -43,6 +43,7 @@ public class MDBConsumer implements MessageListener {
 			
 			Agent agent = agc.findAgent(receiverAid);
 			if(agent != null) {
+				agent.setConsumer(this);
 				agent.handleMessage(aclMsg);
 			}
 			
@@ -51,6 +52,10 @@ public class MDBConsumer implements MessageListener {
 			e.printStackTrace();
 		}
 		
+	}
+	
+	public AgentCenter getAgc() {
+		return agc;
 	}
 
 }

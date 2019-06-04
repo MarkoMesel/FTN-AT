@@ -13,13 +13,11 @@
 <fullyQualifiedTypeName name="agentstuff.AgentType"/>
 <fullyQualifiedTypeName name="javax.ws.rs.POST"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="agentcenter.AgentCenter"/>
 <fullyQualifiedTypeName name="javax.persistence.Cache"/>
 <fullyQualifiedTypeName name="com.sun.beans.util.Cache"/>
 <fullyQualifiedTypeName name="agentstuff.AbstractAgent"/>
 <fullyQualifiedTypeName name="pingpongstuff.Ping"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
-<fullyQualifiedTypeName name="agentstuff.Agent"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="pingpongstuff.Pong"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="agentstuff.AID"/>
 <fullyQualifiedTypeName name="messagestuff.Performative"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="agentcenter.AgentCenter"/>
+<fullyQualifiedTypeName name="agentstuff.Agent"/>
 </qualifiedTypeNameHistroy>

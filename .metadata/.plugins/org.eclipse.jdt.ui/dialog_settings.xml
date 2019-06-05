@@ -5,6 +5,7 @@
 	<item value="false" key="TypeHierarchyViewPart.linkeditors"/>
 	<item value="E:\FAKS\Materijali - AT\2019\Project Workspace\Server\wildfly-11.0.0.Final\bin\client" key="org.eclipse.jdt.ui.lastextjar"/>
 	<item value="2" key="TypeHierarchyViewPart.hierarchyview"/>
+	<item value="filter_imports;" key="filters_last_used"/>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item value="false" key="renameSubpackages"/>
 		<item value="false" key="updateQualifiedNames"/>

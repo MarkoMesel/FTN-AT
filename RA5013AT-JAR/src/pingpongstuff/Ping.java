@@ -42,7 +42,7 @@ public class Ping extends AbstractAgent {
 												   Performative.REQUEST,
 												   "Cao. Ja sam " + aid.getStr() +
 												   ". Saljem ti poruku.");
-			consumer.getAgc().forwardToSM(msgForPong);
+			agc.forwardToSM(msgForPong);
 			System.out.println("POSLAO SAM PORUKU PONG-U!");
 		} else if(aclMsg.performative == Performative.INFORM) {
 			System.out.println("ZAVRSILI SMO SARADNJU!");

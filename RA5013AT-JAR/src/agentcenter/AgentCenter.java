@@ -32,4 +32,6 @@ public interface AgentCenter {
 
 	public void forwardToSM(ACLMessage aclMsg);
 
+	public int numOfAgents();
+
 }

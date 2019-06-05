@@ -6,10 +6,12 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.ejb.Local;
 import javax.ejb.LocalBean;
 import javax.ejb.Singleton;
+import javax.ejb.Stateful;
 import javax.ejb.Stateless;
 
 import org.json.JSONArray;
@@ -17,6 +19,9 @@ import org.json.JSONException;
 
 import agentstuff.AID;
 import agentstuff.Agent;
+import contractnetstuff.Initiator;
+import contractnetstuff.Participant;
+import jmstest.MDBConsumer;
 import jmstest.SendMessage;
 import messagestuff.ACLMessage;
 import messagestuff.Performative;
@@ -31,7 +36,7 @@ public class AgentCenterBean implements AgentCenter {
 	private String alias = "acb";
 	private String address = "moj.program.neznam";
 	
-	public	HashMap<Agent, Boolean> agents = new HashMap<Agent, Boolean>();
+	public	HashMap<Agent, Boolean> agents;
 	//private HashMap<AID, Agent> runningAgents = new HashMap<AID, Agent>();
 	
 	@EJB
@@ -49,6 +54,12 @@ public class AgentCenterBean implements AgentCenter {
 	}
 	public void setAddress(String address) {
 		this.address = address;
+	}
+	
+	@PostConstruct
+	public void init() {
+		System.out.println("JAVLJAM SE IZ AgentCenter init().");
+		agents = new HashMap<Agent, Boolean>();
 	}
 	
 	@Override
@@ -81,9 +92,18 @@ public class AgentCenterBean implements AgentCenter {
 				agent = new Pong();
 				agent.initialise(aid);
 				break;
+			case "initiator":
+				agent = new Initiator();
+				agent.initialise(aid);
+				break;
+			case "participant":
+				agent = new Participant();
+				agent.initialise(aid);
+				break;
 			default:
 				break;
 			}
+			agent.setAgc(this);
 			agents.put(agent, false);
 			System.out.println("USPESNO JE STAVLJEN AGENT U MAPU!");
 		}
@@ -109,6 +129,20 @@ public class AgentCenterBean implements AgentCenter {
 	        case "pong":
 	        	try {
 	        		a = (Pong) pair.getKey();
+	        	}catch(Exception e2) {
+	        		notRight = true;
+	        	}
+	        	break;
+	        case "initiator":
+	        	try {
+	        		a = (Initiator) pair.getKey();
+	        	}catch(Exception e2) {
+	        		notRight = true;
+	        	}
+	        	break;
+	        case "participant":
+	        	try {
+	        		a = (Participant) pair.getKey();
 	        	}catch(Exception e2) {
 	        		notRight = true;
 	        	}
@@ -217,6 +251,13 @@ public class AgentCenterBean implements AgentCenter {
 											   receiverAid,
 											   performative,
 											   content);
+			if(receiverAid.getType().getName().equals("initiator")) {
+				System.out.println("USAO JE U INITIATOR IF!");
+				AID[] participants = getAIDOfRunningParticipants();
+				aclMsg.contentObj = participants;
+				System.out.println("SPREMNO JE ZA SLANJE!");
+			}
+			System.out.println("Saljem poruku...");
 			sm.sendMessage(aclMsg);
 		}
 		//sm.reciNesto();
@@ -225,8 +266,28 @@ public class AgentCenterBean implements AgentCenter {
 	public SendMessage getSM() {
 		return sm;
 	}
+	
 	@Override
 	public void forwardToSM(ACLMessage aclMsg) {
 		sm.sendMessage(aclMsg);
+	}
+	
+	private AID[] getAIDOfRunningParticipants() {
+		ArrayList<AID> participants = new ArrayList<>();
+		Agent a = null;
+		Iterator it = agents.entrySet().iterator();
+		while (it.hasNext()) {
+	        Map.Entry pair = (Map.Entry)it.next();
+	        Agent agent = (Agent) pair.getKey();
+	        if((Boolean) pair.getValue() == true &&
+	           agent.getAid().getType().getName().equals("participant")) {
+	        	participants.add(agent.getAid());
+	        }
+	    }
+		return participants.toArray(new AID[participants.size()]);
+	}
+	@Override
+	public int numOfAgents() {
+		return agents.size();
 	}
 }

@@ -44,6 +44,7 @@ public class ACLMessage implements Serializable {
 		ACLMessage reply = null;
 		if(sender != null || replyTo != null) {
 			reply = new ACLMessage(performative);
+			receivers = new ArrayList<>();
 			reply.receivers.add(replyTo != null ? replyTo : sender);
 			reply.language = language;
 			reply.ontology = ontology;

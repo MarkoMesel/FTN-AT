@@ -1,5 +1,6 @@
 package agentstuff;
 
+import agentcenter.AgentCenterBean;
 import jmstest.MDBConsumer;
 import messagestuff.ACLMessage;
 
@@ -11,6 +12,6 @@ public interface Agent {
 	
 	AID getAid();
 
-	void setConsumer(MDBConsumer consumer);
+	void setAgc(AgentCenterBean agc);
 
 }

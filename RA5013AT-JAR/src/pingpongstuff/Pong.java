@@ -40,7 +40,7 @@ public class Pong extends AbstractAgent {
 			replyToPing.sender = aid;
 			replyToPing.content = "Cao. Ja sam " + aid.getStr() +
 				   					". Evo ti reply.";
-			consumer.getAgc().forwardToSM(replyToPing);
+			agc.forwardToSM(replyToPing);
 			System.out.println("POSLAO SAM REPLY PING-U!");
 		}
 	}

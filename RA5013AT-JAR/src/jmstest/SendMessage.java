@@ -1,5 +1,6 @@
 package jmstest;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Properties;
 
@@ -72,9 +73,9 @@ public class SendMessage {
 			System.out.println("k9");
 			connection = cf.createConnection("testuser","testuser");
 			
-			
 			System.out.println("k10");
-			session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+			//session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+			session = connection.createSession(false, Session.DUPS_OK_ACKNOWLEDGE);
 			System.out.println("k11");
 			messageProducer = session.createProducer(queue);
 
@@ -95,8 +96,27 @@ public class SendMessage {
 	
 	public void sendMessage(ACLMessage aclMsg) {
 		try {
-			ObjectMessage objMsg = session.createObjectMessage(aclMsg);
-			messageProducer.send(objMsg);
+			ArrayList<ObjectMessage> messagesToSend = new ArrayList<>();
+			if(aclMsg.receivers.size() > 1) {
+				System.out.println("IMA VISE RECEIVER-A!");
+				for(int i = 0; i < aclMsg.receivers.size(); i++) {
+				System.out.println("OVO JE PORUKA ZA: " + aclMsg.receivers.get(i).getStr());
+				ACLMessage sendToOne = new ACLMessage(aclMsg.sender,
+												   aclMsg.receivers.get(i),
+												   aclMsg.performative,
+												   aclMsg.content);
+				ObjectMessage objMsg = session.createObjectMessage(sendToOne);
+				messagesToSend.add(objMsg);
+				//messageProducer.send(objMsg);
+				}
+				for(int i = 0; i < messagesToSend.size(); i++) {
+					messageProducer.send(messagesToSend.get(i));
+				}
+				
+			} else {
+				ObjectMessage objMsg = session.createObjectMessage(aclMsg);
+				messageProducer.send(objMsg);
+			}
 		} catch (JMSException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -1,8 +1,11 @@
 package agentstuff;
 
+import javax.ejb.EJB;
 import javax.ejb.Stateful;
 import javax.ejb.StatefulTimeout;
 
+import agentcenter.AgentCenter;
+import agentcenter.AgentCenterBean;
 import jmstest.MDBConsumer;
 import messagestuff.ACLMessage;
 
@@ -13,7 +16,8 @@ import java.util.concurrent.TimeUnit;
 public abstract class AbstractAgent implements Agent {
 	
 	protected AID aid;
-	protected MDBConsumer consumer;
+	
+	protected AgentCenterBean agc;
 	
 	@Override
 	public void handleMessage(ACLMessage msg) {
@@ -26,7 +30,7 @@ public abstract class AbstractAgent implements Agent {
 	}
 	
 	@Override
-	public void setConsumer(MDBConsumer consumer) {
-		this.consumer = consumer;
+	public void setAgc(AgentCenterBean agc) {
+		this.agc = agc;
 	}
 }

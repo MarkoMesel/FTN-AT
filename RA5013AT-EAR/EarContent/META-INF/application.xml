@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/application_7.xsd" id="Application_ID" version="7">
+  <display-name>RA5013AT-EAR</display-name>
+  <module>
+    <web>
+      <web-uri>RA5013AT-WAR.war</web-uri>
+      <context-root>RA5013AT-WAR</context-root>
+    </web>
+  </module>
+  <module>
+    <ejb>RA5013AT-JAR.jar</ejb>
+  </module>
+</application>

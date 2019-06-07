@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
     <wb-module deploy-name="RA5013AT-EAR">
         <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
-        <dependent-module archiveName="RA5013AT-WAR.war" deploy-path="/" handle="module:/resource/RA5013AT-WAR/RA5013AT-WAR">
+        <dependent-module archiveName="RA5013AT-JAR.jar" deploy-path="/" handle="module:/resource/RA5013AT-JAR/RA5013AT-JAR">
             <dependent-object/>
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="RA5013AT-JAR.jar" deploy-path="/" handle="module:/resource/RA5013AT-JAR/RA5013AT-JAR">
+        <dependent-module archiveName="RA5013AT-WAR.war" deploy-path="/" handle="module:/resource/RA5013AT-WAR/RA5013AT-WAR">
             <dependent-object/>
             <dependency-type>uses</dependency-type>
         </dependent-module>

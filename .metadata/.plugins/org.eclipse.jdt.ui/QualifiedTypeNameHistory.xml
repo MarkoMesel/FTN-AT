@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
 <fullyQualifiedTypeName name="javax.ws.rs.Consumes"/>
-<fullyQualifiedTypeName name="javax.ejb.Local"/>
 <fullyQualifiedTypeName name="javax.ws.rs.PUT"/>
 <fullyQualifiedTypeName name="javax.ws.rs.PathParam"/>
 <fullyQualifiedTypeName name="agentstuff.AgentType"/>
@@ -35,7 +34,6 @@
 <fullyQualifiedTypeName name="javax.jms.Destination"/>
 <fullyQualifiedTypeName name="javax.jms.JMSProducer"/>
 <fullyQualifiedTypeName name="jmstest.SendMessage"/>
-<fullyQualifiedTypeName name="javax.ejb.Remote"/>
 <fullyQualifiedTypeName name="jmstest.SendMessageInterface"/>
 <fullyQualifiedTypeName name="javax.ejb.Singleton"/>
 <fullyQualifiedTypeName name="javax.annotation.PreDestroy"/>
@@ -55,9 +53,11 @@
 <fullyQualifiedTypeName name="contractnetstuff.Participant"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="javax.ejb.Stateful"/>
-<fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
 <fullyQualifiedTypeName name="jmstest.MDBConsumer"/>
 <fullyQualifiedTypeName name="javax.ejb.EJB"/>
 <fullyQualifiedTypeName name="agentcenter.AgentCenter"/>
 <fullyQualifiedTypeName name="agentcenter.AgentCenterBean"/>
+<fullyQualifiedTypeName name="javax.ejb.Local"/>
+<fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
+<fullyQualifiedTypeName name="javax.ejb.Remote"/>
 </qualifiedTypeNameHistroy>

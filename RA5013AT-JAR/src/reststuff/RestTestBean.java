@@ -34,13 +34,13 @@ public class RestTestBean implements RestTest {
 	@EJB
 	AgentCenter agc;
 	
-	//@EJB
+	//@EJBs
 	//SendMessageInterface sm;
 	
 	@Override
 	public String getPerformativesList() {
 		System.out.println("JAVLJAM SE IZ JAR-A : RestTest !");
-		agc.reciNesto();
+		//agc.reciNesto();
 		//sm.init();
 		return Arrays.toString(Performative.getPerformativesStringArray());
 	}

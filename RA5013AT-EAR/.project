@@ -3,8 +3,8 @@
 	<name>RA5013AT-EAR</name>
 	<comment></comment>
 	<projects>
-		<project>RA5013AT-WAR</project>
 		<project>RA5013AT-JAR</project>
+		<project>RA5013AT-WAR</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
